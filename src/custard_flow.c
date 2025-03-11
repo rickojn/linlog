@@ -149,29 +149,5 @@ void print_embedding_table(Model *model)
 }
 
 
-void print_model(Model * model){
-    print_embedding_table(model);
 
-    printf("\nhidden layer: \n");
-    for (size_t idx_neuron = 0; idx_neuron < SIZE_HIDDEN; idx_neuron++){
-        printf("neuron %zu, biase %f", idx_neuron, model->parameters.biases_hidden[idx_neuron]);
-        printf("\n");
-        for (size_t idx_neural_weight = 0; idx_neural_weight < SIZE_BLOCK * DIM_EMBEDDINGS; idx_neural_weight++){
-            size_t offset_weight = idx_neuron * DIM_EMBEDDINGS * SIZE_BLOCK + idx_neural_weight;
-            printf("\tWeight %zu: %f  ", idx_neural_weight, model->parameters.weights_hidden[offset_weight]);
-        }
-        printf("\n");
-    }
-
-    printf("\noutput layer: \n");
-    for (size_t idx_neuron = 0; idx_neuron < SIZE_VOCAB; idx_neuron++){
-        printf("neuron %zu, bias %f", idx_neuron, model->parameters.biases_output[idx_neuron]);
-        printf("\n");
-        for (size_t idx_neural_weight = 0; idx_neural_weight < SIZE_HIDDEN; idx_neural_weight++){
-            size_t offset_weight = idx_neuron * SIZE_HIDDEN + idx_neural_weight;
-            printf("\tWeight %zu: %f  ", idx_neural_weight, model->parameters.weights_output[offset_weight]);
-        }
-        printf("\n");
-    }
-}
 
