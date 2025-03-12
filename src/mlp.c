@@ -250,10 +250,10 @@ float cross_entropy_loss(float * probs, char * labels, size_t size_batch){
 }
 
 void loss_softmax_backwards(const char * labels, float * grad_logits, const float * probs, size_t size_batch){
-    for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
+    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++){
         for (size_t idx_logit = 0; idx_logit < SIZE_VOCAB; idx_logit++){
-            float label = idx_logit == encode(labels[idx_batch]) ? 1.0 : 0.0;
-            size_t offset_grad_logit = idx_batch * SIZE_VOCAB + idx_logit;
+            float label = idx_logit == encode(labels[idx_sample]) ? 1.0 : 0.0;
+            size_t offset_grad_logit = idx_sample * SIZE_VOCAB + idx_logit;
             float db_prob = probs[offset_grad_logit]; 
             grad_logits[offset_grad_logit] = probs[offset_grad_logit] - label;
             float db_grad_logit = grad_logits[offset_grad_logit];
@@ -368,7 +368,7 @@ void update_weights(Model * model, size_t size_batch){
         // printf("\n total delta = %f \n", delta);
         delta /= size_batch;
         // printf("\n bias [%d] = %f  delta = %f \n", idx_neuron, model->parameters.biases_output[idx_neuron], delta);
-        model->parameters.biases_output[idx_neuron] -= delta;
+        model->parameters.biases_output[idx_neuron] -= delta * LEARNING_RATE;
     }
 
     for (size_t idx_neuron = 0; idx_neuron < SIZE_VOCAB; idx_neuron++ ){
@@ -505,6 +505,9 @@ int main()
     // printf("\nmodel before training:\n");
     // print_model(&model);
     for (int idx_epoch = 0; idx_epoch < NUM_EPOCHS; idx_epoch++){
+        if (idx_epoch == 30){
+            int db_rocal = 0;
+        }
         printf("\nepoch %d \n", idx_epoch);
         printf("\n");
         model_forward(&model, training_set->X, training_set->size);
