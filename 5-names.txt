@@ -1,0 +1,2210 @@
+
+5 names loaded
+
+creating model ...
+
+... model created.
+
+initialising model ....
+
+model initialised ....
+
+epoch 0 
+
+
+
+loss before back = 4.165828
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.255212	-0.760357	
+token 1:	-0.001434	0.622350	
+token 2:	1.529260	0.136996	
+
+output embedding table:
+token 0:	1.408403	1.280627	
+token 1:	-0.774999	-0.357636	
+token 2:	-0.879451	-0.834668	
+
+
+
+loss after back = 4.137424
+
+epoch 1 
+
+
+
+loss before back = 4.137424
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.242445	-0.733245	
+token 1:	-0.017225	0.591838	
+token 2:	1.519912	0.137369	
+
+output embedding table:
+token 0:	1.415700	1.275618	
+token 1:	-0.764723	-0.357636	
+token 2:	-0.871861	-0.823994	
+
+
+
+loss after back = 4.110235
+
+epoch 2 
+
+
+
+loss before back = 4.110235
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.230230	-0.706482	
+token 1:	-0.032243	0.561751	
+token 2:	1.510612	0.137725	
+
+output embedding table:
+token 0:	1.422946	1.270355	
+token 1:	-0.754875	-0.357636	
+token 2:	-0.864220	-0.813158	
+
+
+
+loss after back = 4.084175
+
+epoch 3 
+
+
+
+loss before back = 4.084175
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.218545	-0.680059	
+token 1:	-0.046504	0.532080	
+token 2:	1.501360	0.138064	
+
+output embedding table:
+token 0:	1.430142	1.264850	
+token 1:	-0.745446	-0.357636	
+token 2:	-0.856527	-0.802165	
+
+
+
+loss after back = 4.059162
+
+epoch 4 
+
+
+
+loss before back = 4.059162
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.207371	-0.653965	
+token 1:	-0.060027	0.502814	
+token 2:	1.492154	0.138389	
+
+output embedding table:
+token 0:	1.437289	1.259116	
+token 1:	-0.736430	-0.357636	
+token 2:	-0.848782	-0.791019	
+
+
+
+loss after back = 4.035121
+
+epoch 5 
+
+
+
+loss before back = 4.035121
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.196689	-0.628190	
+token 1:	-0.072828	0.473943	
+token 2:	1.482993	0.138700	
+
+output embedding table:
+token 0:	1.444387	1.253163	
+token 1:	-0.727819	-0.357636	
+token 2:	-0.840988	-0.779727	
+
+
+
+loss after back = 4.011982
+
+epoch 6 
+
+
+
+loss before back = 4.011982
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.186481	-0.602727	
+token 1:	-0.084925	0.445457	
+token 2:	1.473877	0.139000	
+
+output embedding table:
+token 0:	1.451438	1.247004	
+token 1:	-0.719604	-0.357636	
+token 2:	-0.833143	-0.768293	
+
+
+
+loss after back = 3.989679
+
+epoch 7 
+
+
+
+loss before back = 3.989679
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.176732	-0.577568	
+token 1:	-0.096336	0.417346	
+token 2:	1.464805	0.139288	
+
+output embedding table:
+token 0:	1.458441	1.240648	
+token 1:	-0.711779	-0.357636	
+token 2:	-0.825248	-0.756721	
+
+
+
+loss after back = 3.968152
+
+epoch 8 
+
+
+
+loss before back = 3.968152
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.167423	-0.552705	
+token 1:	-0.107078	0.389603	
+token 2:	1.455775	0.139566	
+
+output embedding table:
+token 0:	1.465397	1.234107	
+token 1:	-0.704336	-0.357636	
+token 2:	-0.817304	-0.745018	
+
+
+
+loss after back = 3.947347
+
+epoch 9 
+
+
+
+loss before back = 3.947347
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.158541	-0.528134	
+token 1:	-0.117168	0.362219	
+token 2:	1.446787	0.139836	
+
+output embedding table:
+token 0:	1.472306	1.227389	
+token 1:	-0.697268	-0.357636	
+token 2:	-0.809312	-0.733188	
+
+
+
+loss after back = 3.927211
+
+epoch 10 
+
+
+
+loss before back = 3.927211
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.150071	-0.503846	
+token 1:	-0.126625	0.335185	
+token 2:	1.437841	0.140098	
+
+output embedding table:
+token 0:	1.479168	1.220506	
+token 1:	-0.690569	-0.357636	
+token 2:	-0.801271	-0.721235	
+
+
+
+loss after back = 3.907696
+
+epoch 11 
+
+
+
+loss before back = 3.907696
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.141998	-0.479839	
+token 1:	-0.135464	0.308496	
+token 2:	1.428936	0.140354	
+
+output embedding table:
+token 0:	1.485985	1.213465	
+token 1:	-0.684232	-0.357636	
+token 2:	-0.793183	-0.709164	
+
+
+
+loss after back = 3.888760
+
+epoch 12 
+
+
+
+loss before back = 3.888760
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.134310	-0.456106	
+token 1:	-0.143703	0.282143	
+token 2:	1.420070	0.140604	
+
+output embedding table:
+token 0:	1.492755	1.206278	
+token 1:	-0.678249	-0.357636	
+token 2:	-0.785047	-0.696979	
+
+
+
+loss after back = 3.870360
+
+epoch 13 
+
+
+
+loss before back = 3.870360
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.126994	-0.432643	
+token 1:	-0.151360	0.256119	
+token 2:	1.411243	0.140850	
+
+output embedding table:
+token 0:	1.499479	1.198951	
+token 1:	-0.672615	-0.357636	
+token 2:	-0.776865	-0.684686	
+
+
+
+loss after back = 3.852459
+
+epoch 14 
+
+
+
+loss before back = 3.852459
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.120039	-0.409447	
+token 1:	-0.158452	0.230420	
+token 2:	1.402456	0.141092	
+
+output embedding table:
+token 0:	1.506156	1.191494	
+token 1:	-0.667323	-0.357636	
+token 2:	-0.768636	-0.672287	
+
+
+
+loss after back = 3.835022
+
+epoch 15 
+
+
+
+loss before back = 3.835022
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.113432	-0.386513	
+token 1:	-0.164994	0.205039	
+token 2:	1.393706	0.141330	
+
+output embedding table:
+token 0:	1.512788	1.183914	
+token 1:	-0.662367	-0.357636	
+token 2:	-0.760361	-0.659788	
+
+
+
+loss after back = 3.818018
+
+epoch 16 
+
+
+
+loss before back = 3.818018
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.107164	-0.363838	
+token 1:	-0.171006	0.179971	
+token 2:	1.384993	0.141567	
+
+output embedding table:
+token 0:	1.519373	1.176220	
+token 1:	-0.657740	-0.357636	
+token 2:	-0.752041	-0.647192	
+
+
+
+loss after back = 3.801414
+
+epoch 17 
+
+
+
+loss before back = 3.801414
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.101223	-0.341419	
+token 1:	-0.176502	0.155210	
+token 2:	1.376317	0.141803	
+
+output embedding table:
+token 0:	1.525911	1.168418	
+token 1:	-0.653437	-0.357636	
+token 2:	-0.743675	-0.634503	
+
+
+
+loss after back = 3.785186
+
+epoch 18 
+
+
+
+loss before back = 3.785186
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.095599	-0.319253	
+token 1:	-0.181500	0.130752	
+token 2:	1.367677	0.142038	
+
+output embedding table:
+token 0:	1.532403	1.160516	
+token 1:	-0.649451	-0.357636	
+token 2:	-0.735265	-0.621724	
+
+
+
+loss after back = 3.769305
+
+epoch 19 
+
+
+
+loss before back = 3.769305
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.090284	-0.297337	
+token 1:	-0.186016	0.106593	
+token 2:	1.359073	0.142273	
+
+output embedding table:
+token 0:	1.538846	1.152521	
+token 1:	-0.645776	-0.357636	
+token 2:	-0.726810	-0.608860	
+
+
+
+loss after back = 3.753749
+
+epoch 20 
+
+
+
+loss before back = 3.753749
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.085267	-0.275668	
+token 1:	-0.190066	0.082727	
+token 2:	1.350504	0.142509	
+
+output embedding table:
+token 0:	1.545242	1.144439	
+token 1:	-0.642406	-0.357636	
+token 2:	-0.718310	-0.595913	
+
+
+
+loss after back = 3.738495
+
+epoch 21 
+
+
+
+loss before back = 3.738495
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.080540	-0.254244	
+token 1:	-0.193666	0.059152	
+token 2:	1.341969	0.142746	
+
+output embedding table:
+token 0:	1.551590	1.136277	
+token 1:	-0.639335	-0.357636	
+token 2:	-0.709767	-0.582886	
+
+
+
+loss after back = 3.723522
+
+epoch 22 
+
+
+
+loss before back = 3.723522
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.076095	-0.233063	
+token 1:	-0.196833	0.035862	
+token 2:	1.333468	0.142986	
+
+output embedding table:
+token 0:	1.557888	1.128041	
+token 1:	-0.636558	-0.357636	
+token 2:	-0.701181	-0.569783	
+
+
+
+loss after back = 3.708812
+
+epoch 23 
+
+
+
+loss before back = 3.708812
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.071923	-0.212121	
+token 1:	-0.199581	0.012856	
+token 2:	1.325001	0.143228	
+
+output embedding table:
+token 0:	1.564137	1.119736	
+token 1:	-0.634068	-0.357636	
+token 2:	-0.692551	-0.556606	
+
+
+
+loss after back = 3.694347
+
+epoch 24 
+
+
+
+loss before back = 3.694347
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.068016	-0.191417	
+token 1:	-0.201927	-0.009872	
+token 2:	1.316567	0.143474	
+
+output embedding table:
+token 0:	1.570336	1.111368	
+token 1:	-0.631859	-0.357636	
+token 2:	-0.683879	-0.543359	
+
+
+
+loss after back = 3.680110
+
+epoch 25 
+
+
+
+loss before back = 3.680110
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.064366	-0.170948	
+token 1:	-0.203885	-0.032323	
+token 2:	1.308166	0.143724	
+
+output embedding table:
+token 0:	1.576483	1.102941	
+token 1:	-0.629927	-0.357636	
+token 2:	-0.675165	-0.530044	
+
+
+
+loss after back = 3.666087
+
+epoch 26 
+
+
+
+loss before back = 3.666087
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.060967	-0.150713	
+token 1:	-0.205471	-0.054502	
+token 2:	1.299796	0.143978	
+
+output embedding table:
+token 0:	1.582579	1.094462	
+token 1:	-0.628265	-0.357636	
+token 2:	-0.666408	-0.516664	
+
+
+
+loss after back = 3.652261
+
+epoch 27 
+
+
+
+loss before back = 3.652261
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.057811	-0.130709	
+token 1:	-0.206700	-0.076411	
+token 2:	1.291459	0.144238	
+
+output embedding table:
+token 0:	1.588622	1.085934	
+token 1:	-0.626867	-0.357636	
+token 2:	-0.657610	-0.503221	
+
+
+
+loss after back = 3.638622
+
+epoch 28 
+
+
+
+loss before back = 3.638622
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.054891	-0.110934	
+token 1:	-0.207585	-0.098053	
+token 2:	1.283153	0.144504	
+
+output embedding table:
+token 0:	1.594611	1.077362	
+token 1:	-0.625728	-0.357636	
+token 2:	-0.648771	-0.489718	
+
+
+
+loss after back = 3.625155
+
+epoch 29 
+
+
+
+loss before back = 3.625155
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.052201	-0.091386	
+token 1:	-0.208141	-0.119431	
+token 2:	1.274877	0.144775	
+
+output embedding table:
+token 0:	1.600545	1.068750	
+token 1:	-0.624842	-0.357636	
+token 2:	-0.639890	-0.476157	
+
+
+
+loss after back = 3.611850
+
+epoch 30 
+
+
+
+loss before back = 3.611850
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.049733	-0.072063	
+token 1:	-0.208382	-0.140547	
+token 2:	1.266633	0.145054	
+
+output embedding table:
+token 0:	1.606423	1.060103	
+token 1:	-0.624204	-0.357636	
+token 2:	-0.630970	-0.462540	
+
+
+
+loss after back = 3.598695
+
+epoch 31 
+
+
+
+loss before back = 3.598695
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.047482	-0.052962	
+token 1:	-0.208322	-0.161405	
+token 2:	1.258418	0.145339	
+
+output embedding table:
+token 0:	1.612245	1.051423	
+token 1:	-0.623807	-0.357636	
+token 2:	-0.622010	-0.448870	
+
+
+
+loss after back = 3.585681
+
+epoch 32 
+
+
+
+loss before back = 3.585681
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.045441	-0.034082	
+token 1:	-0.207975	-0.182006	
+token 2:	1.250234	0.145633	
+
+output embedding table:
+token 0:	1.618008	1.042715	
+token 1:	-0.623646	-0.357636	
+token 2:	-0.613010	-0.435148	
+
+
+
+loss after back = 3.572798
+
+epoch 33 
+
+
+
+loss before back = 3.572798
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.043605	-0.015421	
+token 1:	-0.207353	-0.202354	
+token 2:	1.242078	0.145934	
+
+output embedding table:
+token 0:	1.623713	1.033982	
+token 1:	-0.623716	-0.357636	
+token 2:	-0.603971	-0.421377	
+
+
+
+loss after back = 3.560039
+
+epoch 34 
+
+
+
+loss before back = 3.560039
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.041967	0.003024	
+token 1:	-0.206469	-0.222451	
+token 2:	1.233952	0.146245	
+
+output embedding table:
+token 0:	1.629357	1.025226	
+token 1:	-0.624012	-0.357636	
+token 2:	-0.594893	-0.407559	
+
+
+
+loss after back = 3.547393
+
+epoch 35 
+
+
+
+loss before back = 3.547393
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.040522	0.021254	
+token 1:	-0.205336	-0.242299	
+token 2:	1.225855	0.146564	
+
+output embedding table:
+token 0:	1.634939	1.016452	
+token 1:	-0.624526	-0.357636	
+token 2:	-0.585778	-0.393695	
+
+
+
+loss after back = 3.534855
+
+epoch 36 
+
+
+
+loss before back = 3.534855
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.039265	0.039273	
+token 1:	-0.203966	-0.261901	
+token 2:	1.217786	0.146893	
+
+output embedding table:
+token 0:	1.640459	1.007660	
+token 1:	-0.625255	-0.357636	
+token 2:	-0.576625	-0.379788	
+
+
+
+loss after back = 3.522417
+
+epoch 37 
+
+
+
+loss before back = 3.522417
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.038190	0.057082	
+token 1:	-0.202372	-0.281259	
+token 2:	1.209746	0.147232	
+
+output embedding table:
+token 0:	1.645914	0.998855	
+token 1:	-0.626192	-0.357636	
+token 2:	-0.567434	-0.365839	
+
+
+
+loss after back = 3.510072
+
+epoch 38 
+
+
+
+loss before back = 3.510072
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.037292	0.074683	
+token 1:	-0.200565	-0.300375	
+token 2:	1.201733	0.147581	
+
+output embedding table:
+token 0:	1.651304	0.990038	
+token 1:	-0.627332	-0.357636	
+token 2:	-0.558207	-0.351850	
+
+
+
+loss after back = 3.497814
+
+epoch 39 
+
+
+
+loss before back = 3.497814
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.036566	0.092079	
+token 1:	-0.198556	-0.319252	
+token 2:	1.193748	0.147942	
+
+output embedding table:
+token 0:	1.656627	0.981212	
+token 1:	-0.628670	-0.357636	
+token 2:	-0.548944	-0.337822	
+
+
+
+loss after back = 3.485638
+
+epoch 40 
+
+
+
+loss before back = 3.485638
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.036007	0.109272	
+token 1:	-0.196357	-0.337892	
+token 2:	1.185789	0.148313	
+
+output embedding table:
+token 0:	1.661881	0.972378	
+token 1:	-0.630199	-0.357636	
+token 2:	-0.539645	-0.323758	
+
+
+
+loss after back = 3.473538
+
+epoch 41 
+
+
+
+loss before back = 3.473538
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.035610	0.126264	
+token 1:	-0.193979	-0.356298	
+token 2:	1.177858	0.148696	
+
+output embedding table:
+token 0:	1.667066	0.963538	
+token 1:	-0.631915	-0.357636	
+token 2:	-0.530312	-0.309659	
+
+
+
+loss after back = 3.461509
+
+epoch 42 
+
+
+
+loss before back = 3.461509
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.035370	0.143058	
+token 1:	-0.191431	-0.374471	
+token 2:	1.169954	0.149091	
+
+output embedding table:
+token 0:	1.672180	0.954695	
+token 1:	-0.633813	-0.357636	
+token 2:	-0.520944	-0.295526	
+
+
+
+loss after back = 3.449547
+
+epoch 43 
+
+
+
+loss before back = 3.449547
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.035284	0.159656	
+token 1:	-0.188725	-0.392414	
+token 2:	1.162076	0.149499	
+
+output embedding table:
+token 0:	1.677221	0.945849	
+token 1:	-0.635886	-0.357636	
+token 2:	-0.511542	-0.281361	
+
+
+
+loss after back = 3.437647
+
+epoch 44 
+
+
+
+loss before back = 3.437647
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.035346	0.176061	
+token 1:	-0.185869	-0.410130	
+token 2:	1.154224	0.149919	
+
+output embedding table:
+token 0:	1.682188	0.937002	
+token 1:	-0.638131	-0.357636	
+token 2:	-0.502106	-0.267166	
+
+
+
+loss after back = 3.425805
+
+epoch 45 
+
+
+
+loss before back = 3.425805
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.035553	0.192275	
+token 1:	-0.182875	-0.427621	
+token 2:	1.146398	0.150352	
+
+output embedding table:
+token 0:	1.687079	0.928155	
+token 1:	-0.640540	-0.357636	
+token 2:	-0.492638	-0.252942	
+
+
+
+loss after back = 3.414018
+
+epoch 46 
+
+
+
+loss before back = 3.414018
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.035899	0.208301	
+token 1:	-0.179750	-0.444889	
+token 2:	1.138598	0.150799	
+
+output embedding table:
+token 0:	1.691894	0.919309	
+token 1:	-0.643109	-0.357636	
+token 2:	-0.483138	-0.238691	
+
+
+
+loss after back = 3.402282
+
+epoch 47 
+
+
+
+loss before back = 3.402282
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.036382	0.224141	
+token 1:	-0.176505	-0.461935	
+token 2:	1.130823	0.151260	
+
+output embedding table:
+token 0:	1.696630	0.910466	
+token 1:	-0.645833	-0.357636	
+token 2:	-0.473606	-0.224413	
+
+
+
+loss after back = 3.390594
+
+epoch 48 
+
+
+
+loss before back = 3.390594
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.036996	0.239798	
+token 1:	-0.173147	-0.478764	
+token 2:	1.123074	0.151734	
+
+output embedding table:
+token 0:	1.701286	0.901627	
+token 1:	-0.648707	-0.357636	
+token 2:	-0.464044	-0.210112	
+
+
+
+loss after back = 3.378951
+
+epoch 49 
+
+
+
+loss before back = 3.378951
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.037739	0.255274	
+token 1:	-0.169686	-0.495377	
+token 2:	1.115349	0.152223	
+
+output embedding table:
+token 0:	1.705861	0.892791	
+token 1:	-0.651725	-0.357636	
+token 2:	-0.454451	-0.195786	
+
+
+
+loss after back = 3.367349
+
+epoch 50 
+
+
+
+loss before back = 3.367349
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.038606	0.270573	
+token 1:	-0.166129	-0.511775	
+token 2:	1.107649	0.152727	
+
+output embedding table:
+token 0:	1.710353	0.883960	
+token 1:	-0.654882	-0.357636	
+token 2:	-0.444829	-0.181440	
+
+
+
+loss after back = 3.355787
+
+epoch 51 
+
+
+
+loss before back = 3.355787
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.039594	0.285696	
+token 1:	-0.162485	-0.527963	
+token 2:	1.099973	0.153245	
+
+output embedding table:
+token 0:	1.714761	0.875134	
+token 1:	-0.658173	-0.357636	
+token 2:	-0.435177	-0.167072	
+
+
+
+loss after back = 3.344263
+
+epoch 52 
+
+
+
+loss before back = 3.344263
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.040700	0.300648	
+token 1:	-0.158760	-0.543941	
+token 2:	1.092322	0.153779	
+
+output embedding table:
+token 0:	1.719084	0.866315	
+token 1:	-0.661593	-0.357636	
+token 2:	-0.425498	-0.152686	
+
+
+
+loss after back = 3.332772
+
+epoch 53 
+
+
+
+loss before back = 3.332772
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.041919	0.315430	
+token 1:	-0.154962	-0.559712	
+token 2:	1.084695	0.154328	
+
+output embedding table:
+token 0:	1.723320	0.857501	
+token 1:	-0.665138	-0.357636	
+token 2:	-0.415790	-0.138282	
+
+
+
+loss after back = 3.321315
+
+epoch 54 
+
+
+
+loss before back = 3.321315
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.043249	0.330045	
+token 1:	-0.151098	-0.575279	
+token 2:	1.077092	0.154894	
+
+output embedding table:
+token 0:	1.727467	0.848694	
+token 1:	-0.668802	-0.357636	
+token 2:	-0.406056	-0.123862	
+
+
+
+loss after back = 3.309889
+
+epoch 55 
+
+
+
+loss before back = 3.309889
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.044685	0.344496	
+token 1:	-0.147175	-0.590643	
+token 2:	1.069512	0.155475	
+
+output embedding table:
+token 0:	1.731525	0.839895	
+token 1:	-0.672580	-0.357636	
+token 2:	-0.396296	-0.109426	
+
+
+
+loss after back = 3.298491
+
+epoch 56 
+
+
+
+loss before back = 3.298491
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.046226	0.358786	
+token 1:	-0.143200	-0.605807	
+token 2:	1.061956	0.156072	
+
+output embedding table:
+token 0:	1.735491	0.831102	
+token 1:	-0.676467	-0.357636	
+token 2:	-0.386510	-0.094977	
+
+
+
+loss after back = 3.287121
+
+epoch 57 
+
+
+
+loss before back = 3.287121
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.047868	0.372918	
+token 1:	-0.139177	-0.620774	
+token 2:	1.054423	0.156686	
+
+output embedding table:
+token 0:	1.739366	0.822317	
+token 1:	-0.680459	-0.357636	
+token 2:	-0.376699	-0.080516	
+
+
+
+loss after back = 3.275778
+
+epoch 58 
+
+
+
+loss before back = 3.275778
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.049608	0.386895	
+token 1:	-0.135114	-0.635545	
+token 2:	1.046914	0.157316	
+
+output embedding table:
+token 0:	1.743147	0.813539	
+token 1:	-0.684551	-0.357636	
+token 2:	-0.366864	-0.066043	
+
+
+
+loss after back = 3.264459
+
+epoch 59 
+
+
+
+loss before back = 3.264459
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.051443	0.400719	
+token 1:	-0.131016	-0.650123	
+token 2:	1.039427	0.157964	
+
+output embedding table:
+token 0:	1.746834	0.804769	
+token 1:	-0.688739	-0.357636	
+token 2:	-0.357005	-0.051561	
+
+
+
+loss after back = 3.253162
+
+epoch 60 
+
+
+
+loss before back = 3.253162
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.053370	0.414394	
+token 1:	-0.126888	-0.664511	
+token 2:	1.031963	0.158628	
+
+output embedding table:
+token 0:	1.750424	0.796006	
+token 1:	-0.693017	-0.357636	
+token 2:	-0.347124	-0.037070	
+
+
+
+loss after back = 3.241888
+
+epoch 61 
+
+
+
+loss before back = 3.241888
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.055387	0.427923	
+token 1:	-0.122735	-0.678709	
+token 2:	1.024522	0.159310	
+
+output embedding table:
+token 0:	1.753919	0.787250	
+token 1:	-0.697381	-0.357636	
+token 2:	-0.337221	-0.022571	
+
+
+
+loss after back = 3.230635
+
+epoch 62 
+
+
+
+loss before back = 3.230635
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.057490	0.441307	
+token 1:	-0.118563	-0.692721	
+token 2:	1.017104	0.160009	
+
+output embedding table:
+token 0:	1.757315	0.778503	
+token 1:	-0.701827	-0.357636	
+token 2:	-0.327297	-0.008067	
+
+
+
+loss after back = 3.219402
+
+epoch 63 
+
+
+
+loss before back = 3.219402
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.059678	0.454551	
+token 1:	-0.114375	-0.706549	
+token 2:	1.009708	0.160726	
+
+output embedding table:
+token 0:	1.760612	0.769762	
+token 1:	-0.706351	-0.357636	
+token 2:	-0.317352	0.006441	
+
+
+
+loss after back = 3.208188
+
+epoch 64 
+
+
+
+loss before back = 3.208188
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.061948	0.467658	
+token 1:	-0.110177	-0.720196	
+token 2:	1.002334	0.161461	
+
+output embedding table:
+token 0:	1.763810	0.761029	
+token 1:	-0.710947	-0.357636	
+token 2:	-0.307388	0.020953	
+
+
+
+loss after back = 3.196992
+
+epoch 65 
+
+
+
+loss before back = 3.196992
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.064297	0.480629	
+token 1:	-0.105972	-0.733662	
+token 2:	0.994983	0.162214	
+
+output embedding table:
+token 0:	1.766907	0.752303	
+token 1:	-0.715612	-0.357636	
+token 2:	-0.297404	0.035467	
+
+
+
+loss after back = 3.185815
+
+epoch 66 
+
+
+
+loss before back = 3.185815
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.066723	0.493469	
+token 1:	-0.101764	-0.746951	
+token 2:	0.987653	0.162984	
+
+output embedding table:
+token 0:	1.769903	0.743584	
+token 1:	-0.720342	-0.357636	
+token 2:	-0.287403	0.049982	
+
+
+
+loss after back = 3.174654
+
+epoch 67 
+
+
+
+loss before back = 3.174654
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.069224	0.506180	
+token 1:	-0.097557	-0.760065	
+token 2:	0.980345	0.163773	
+
+output embedding table:
+token 0:	1.772797	0.734873	
+token 1:	-0.725132	-0.357636	
+token 2:	-0.277385	0.064495	
+
+
+
+loss after back = 3.163509
+
+epoch 68 
+
+
+
+loss before back = 3.163509
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.071797	0.518765	
+token 1:	-0.093355	-0.773005	
+token 2:	0.973060	0.164581	
+
+output embedding table:
+token 0:	1.775588	0.726168	
+token 1:	-0.729979	-0.357636	
+token 2:	-0.267350	0.079007	
+
+
+
+loss after back = 3.152381
+
+epoch 69 
+
+
+
+loss before back = 3.152381
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.074441	0.531227	
+token 1:	-0.089161	-0.785775	
+token 2:	0.965795	0.165406	
+
+output embedding table:
+token 0:	1.778276	0.717470	
+token 1:	-0.734879	-0.357636	
+token 2:	-0.257299	0.093515	
+
+
+
+loss after back = 3.141267
+
+epoch 70 
+
+
+
+loss before back = 3.141267
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.077153	0.543568	
+token 1:	-0.084978	-0.798376	
+token 2:	0.958553	0.166251	
+
+output embedding table:
+token 0:	1.780860	0.708778	
+token 1:	-0.739828	-0.357636	
+token 2:	-0.247234	0.108017	
+
+
+
+loss after back = 3.130168
+
+epoch 71 
+
+
+
+loss before back = 3.130168
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.079931	0.555792	
+token 1:	-0.080808	-0.810811	
+token 2:	0.951332	0.167113	
+
+output embedding table:
+token 0:	1.783340	0.700094	
+token 1:	-0.744821	-0.357636	
+token 2:	-0.237155	0.122514	
+
+
+
+loss after back = 3.119084
+
+epoch 72 
+
+
+
+loss before back = 3.119084
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.082774	0.567902	
+token 1:	-0.076655	-0.823081	
+token 2:	0.944132	0.167995	
+
+output embedding table:
+token 0:	1.785715	0.691415	
+token 1:	-0.749856	-0.357636	
+token 2:	-0.227063	0.137003	
+
+
+
+loss after back = 3.108015
+
+epoch 73 
+
+
+
+loss before back = 3.108015
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.085679	0.579899	
+token 1:	-0.072522	-0.835189	
+token 2:	0.936954	0.168895	
+
+output embedding table:
+token 0:	1.787985	0.682743	
+token 1:	-0.754930	-0.357636	
+token 2:	-0.216959	0.151482	
+
+
+
+loss after back = 3.096960
+
+epoch 74 
+
+
+
+loss before back = 3.096960
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.088644	0.591789	
+token 1:	-0.068410	-0.847136	
+token 2:	0.929797	0.169814	
+
+output embedding table:
+token 0:	1.790150	0.674078	
+token 1:	-0.760037	-0.357636	
+token 2:	-0.206844	0.165951	
+
+
+
+loss after back = 3.085918
+
+epoch 75 
+
+
+
+loss before back = 3.085918
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.091669	0.603571	
+token 1:	-0.064321	-0.858926	
+token 2:	0.922661	0.170752	
+
+output embedding table:
+token 0:	1.792210	0.665418	
+token 1:	-0.765176	-0.357636	
+token 2:	-0.196719	0.180407	
+
+
+
+loss after back = 3.074890
+
+epoch 76 
+
+
+
+loss before back = 3.074890
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.094750	0.615251	
+token 1:	-0.060258	-0.870560	
+token 2:	0.915547	0.171709	
+
+output embedding table:
+token 0:	1.794165	0.656766	
+token 1:	-0.770343	-0.357636	
+token 2:	-0.186585	0.194850	
+
+
+
+loss after back = 3.063875
+
+epoch 77 
+
+
+
+loss before back = 3.063875
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.097887	0.626830	
+token 1:	-0.056223	-0.882039	
+token 2:	0.908453	0.172685	
+
+output embedding table:
+token 0:	1.796015	0.648119	
+token 1:	-0.775535	-0.357636	
+token 2:	-0.176442	0.209276	
+
+
+
+loss after back = 3.052875
+
+epoch 78 
+
+
+
+loss before back = 3.052875
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.101078	0.638311	
+token 1:	-0.052218	-0.893367	
+token 2:	0.901380	0.173680	
+
+output embedding table:
+token 0:	1.797760	0.639479	
+token 1:	-0.780748	-0.357636	
+token 2:	-0.166293	0.223686	
+
+
+
+loss after back = 3.041888
+
+epoch 79 
+
+
+
+loss before back = 3.041888
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.104320	0.649696	
+token 1:	-0.048243	-0.904545	
+token 2:	0.894329	0.174693	
+
+output embedding table:
+token 0:	1.799400	0.630845	
+token 1:	-0.785980	-0.357636	
+token 2:	-0.156138	0.238077	
+
+
+
+loss after back = 3.030915
+
+epoch 80 
+
+
+
+loss before back = 3.030915
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.107613	0.660989	
+token 1:	-0.044302	-0.915575	
+token 2:	0.887298	0.175726	
+
+output embedding table:
+token 0:	1.800936	0.622218	
+token 1:	-0.791228	-0.357636	
+token 2:	-0.145977	0.252447	
+
+
+
+loss after back = 3.019956
+
+epoch 81 
+
+
+
+loss before back = 3.019956
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.110956	0.672192	
+token 1:	-0.040394	-0.926459	
+token 2:	0.880288	0.176778	
+
+output embedding table:
+token 0:	1.802367	0.613598	
+token 1:	-0.796489	-0.357636	
+token 2:	-0.135814	0.266795	
+
+
+
+loss after back = 3.009011
+
+epoch 82 
+
+
+
+loss before back = 3.009011
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.114346	0.683307	
+token 1:	-0.036521	-0.937200	
+token 2:	0.873298	0.177848	
+
+output embedding table:
+token 0:	1.803696	0.604985	
+token 1:	-0.801761	-0.357636	
+token 2:	-0.125647	0.281119	
+
+
+
+loss after back = 2.998080
+
+epoch 83 
+
+
+
+loss before back = 2.998080
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.117782	0.694337	
+token 1:	-0.032684	-0.947798	
+token 2:	0.866329	0.178938	
+
+output embedding table:
+token 0:	1.804921	0.596379	
+token 1:	-0.807040	-0.357636	
+token 2:	-0.115479	0.295416	
+
+
+
+loss after back = 2.987163
+
+epoch 84 
+
+
+
+loss before back = 2.987163
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.121263	0.705284	
+token 1:	-0.028885	-0.958257	
+token 2:	0.859381	0.180046	
+
+output embedding table:
+token 0:	1.806044	0.587781	
+token 1:	-0.812325	-0.357636	
+token 2:	-0.105311	0.309686	
+
+
+
+loss after back = 2.976261
+
+epoch 85 
+
+
+
+loss before back = 2.976261
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.124787	0.716151	
+token 1:	-0.025124	-0.968578	
+token 2:	0.852454	0.181174	
+
+output embedding table:
+token 0:	1.807065	0.579190	
+token 1:	-0.817614	-0.357636	
+token 2:	-0.095145	0.323926	
+
+
+
+loss after back = 2.965375
+
+epoch 86 
+
+
+
+loss before back = 2.965375
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.128353	0.726940	
+token 1:	-0.021403	-0.978763	
+token 2:	0.845547	0.182320	
+
+output embedding table:
+token 0:	1.807986	0.570608	
+token 1:	-0.822903	-0.357636	
+token 2:	-0.084980	0.338134	
+
+
+
+loss after back = 2.954504
+
+epoch 87 
+
+
+
+loss before back = 2.954504
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.131961	0.737653	
+token 1:	-0.017721	-0.988815	
+token 2:	0.838660	0.183485	
+
+output embedding table:
+token 0:	1.808807	0.562035	
+token 1:	-0.828191	-0.357636	
+token 2:	-0.074820	0.352309	
+
+
+
+loss after back = 2.943649
+
+epoch 88 
+
+
+
+loss before back = 2.943649
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.135608	0.748292	
+token 1:	-0.014080	-0.998734	
+token 2:	0.831794	0.184668	
+
+output embedding table:
+token 0:	1.809529	0.553470	
+token 1:	-0.833476	-0.357636	
+token 2:	-0.064665	0.366447	
+
+
+
+loss after back = 2.932811
+
+epoch 89 
+
+
+
+loss before back = 2.932811
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.139293	0.758861	
+token 1:	-0.010480	-1.008522	
+token 2:	0.824949	0.185870	
+
+output embedding table:
+token 0:	1.810154	0.544915	
+token 1:	-0.838755	-0.357636	
+token 2:	-0.054517	0.380546	
+
+
+
+loss after back = 2.921990
+
+epoch 90 
+
+
+
+loss before back = 2.921990
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.143016	0.769360	
+token 1:	-0.006922	-1.018183	
+token 2:	0.818123	0.187091	
+
+output embedding table:
+token 0:	1.810682	0.536371	
+token 1:	-0.844028	-0.357636	
+token 2:	-0.044377	0.394606	
+
+
+
+loss after back = 2.911188
+
+epoch 91 
+
+
+
+loss before back = 2.911188
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.146774	0.779792	
+token 1:	-0.003406	-1.027717	
+token 2:	0.811318	0.188329	
+
+output embedding table:
+token 0:	1.811115	0.527837	
+token 1:	-0.849292	-0.357636	
+token 2:	-0.034246	0.408622	
+
+
+
+loss after back = 2.900402
+
+epoch 92 
+
+
+
+loss before back = 2.900402
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.150568	0.790159	
+token 1:	0.000068	-1.037126	
+token 2:	0.804533	0.189587	
+
+output embedding table:
+token 0:	1.811453	0.519315	
+token 1:	-0.854545	-0.357636	
+token 2:	-0.024127	0.422594	
+
+
+
+loss after back = 2.889637
+
+epoch 93 
+
+
+
+loss before back = 2.889637
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.154395	0.800463	
+token 1:	0.003498	-1.046413	
+token 2:	0.797768	0.190862	
+
+output embedding table:
+token 0:	1.811699	0.510804	
+token 1:	-0.859786	-0.357636	
+token 2:	-0.014021	0.436517	
+
+
+
+loss after back = 2.878891
+
+epoch 94 
+
+
+
+loss before back = 2.878891
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.158255	0.810706	
+token 1:	0.006885	-1.055579	
+token 2:	0.791023	0.192156	
+
+output embedding table:
+token 0:	1.811854	0.502307	
+token 1:	-0.865014	-0.357636	
+token 2:	-0.003930	0.450391	
+
+
+
+loss after back = 2.868167
+
+epoch 95 
+
+
+
+loss before back = 2.868167
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.162146	0.820890	
+token 1:	0.010228	-1.064625	
+token 2:	0.784299	0.193467	
+
+output embedding table:
+token 0:	1.811919	0.493823	
+token 1:	-0.870227	-0.357636	
+token 2:	0.006144	0.464212	
+
+
+
+loss after back = 2.857464
+
+epoch 96 
+
+
+
+loss before back = 2.857464
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.166068	0.831016	
+token 1:	0.013527	-1.073555	
+token 2:	0.777594	0.194796	
+
+output embedding table:
+token 0:	1.811897	0.485354	
+token 1:	-0.875424	-0.357636	
+token 2:	0.016201	0.477977	
+
+
+
+loss after back = 2.846784
+
+epoch 97 
+
+
+
+loss before back = 2.846784
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.170020	0.841087	
+token 1:	0.016783	-1.082368	
+token 2:	0.770909	0.196143	
+
+output embedding table:
+token 0:	1.811787	0.476899	
+token 1:	-0.880603	-0.357636	
+token 2:	0.026237	0.491685	
+
+
+
+loss after back = 2.836127
+
+epoch 98 
+
+
+
+loss before back = 2.836127
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.174000	0.851103	
+token 1:	0.019994	-1.091069	
+token 2:	0.764243	0.197508	
+
+output embedding table:
+token 0:	1.811593	0.468461	
+token 1:	-0.885764	-0.357636	
+token 2:	0.036251	0.505332	
+
+
+
+loss after back = 2.825495
+
+epoch 99 
+
+
+
+loss before back = 2.825495
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.178008	0.861067	
+token 1:	0.023160	-1.099657	
+token 2:	0.757598	0.198890	
+
+output embedding table:
+token 0:	1.811316	0.460041	
+token 1:	-0.890906	-0.357636	
+token 2:	0.046241	0.518915	
+
+
+
+loss after back = 2.814889
