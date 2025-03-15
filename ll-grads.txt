@@ -1,0 +1,3810 @@
+
+1 names loaded
+
+creating model ...
+
+... model created.
+
+initialising model ....
+
+model initialised ....
+
+epoch 0 
+
+
+prob [0]: 0.009476	prob [1]: 0.854140	prob [2]: 0.136385	
+prob [0]: 0.330549	prob [1]: 0.459949	prob [2]: 0.209503	
+prob [0]: 0.769505	prob [1]: 0.009876	prob [2]: 0.220619	
+
+loss before back = 0.660896
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.255212	-0.760357	
+token 1:	-0.001434	0.622350	
+token 2:	1.529260	0.136996	
+
+output embedding table:
+token 0:	1.008200	0.136165	
+token 1:	-2.131160	-0.058477	
+token 2:	0.031738	-1.228549	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.009476	grad [1]: -0.145860	grad [2]: 0.136385	
+grad [0]: 0.330549	grad [1]: 0.459949	grad [2]: -0.790497	
+grad [0]: -0.230495	grad [1]: 0.009876	grad [2]: 0.220619	
+embedding grads:
+
+grad [0]: 0.324419	grad [1]: -0.162191	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.677455	grad [3]: 1.012126	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.242332	grad [5]: -0.308314	
+
+
+loss after back = 0.633870
+
+epoch 1 
+
+
+prob [0]: 0.008979	prob [1]: 0.860704	prob [2]: 0.130317	
+prob [0]: 0.338117	prob [1]: 0.438699	prob [2]: 0.223184	
+prob [0]: 0.777366	prob [1]: 0.009416	prob [2]: 0.213218	
+
+loss before back = 0.633870
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.266026	-0.754951	
+token 1:	0.021148	0.588613	
+token 2:	1.537337	0.147273	
+
+output embedding table:
+token 0:	1.019749	0.130850	
+token 1:	-2.137830	-0.070636	
+token 2:	0.026859	-1.211075	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.008979	grad [1]: -0.139296	grad [2]: 0.130317	
+grad [0]: 0.338117	grad [1]: 0.438699	grad [2]: -0.776816	
+grad [0]: -0.222634	grad [1]: 0.009416	grad [2]: 0.213218	
+embedding grads:
+
+grad [0]: 0.310052	grad [1]: -0.150733	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.618703	grad [3]: 0.974743	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.237758	grad [5]: -0.292814	
+
+
+loss after back = 0.609694
+
+epoch 2 
+
+
+prob [0]: 0.008523	prob [1]: 0.866714	prob [2]: 0.124763	
+prob [0]: 0.344499	prob [1]: 0.419378	prob [2]: 0.236123	
+prob [0]: 0.784558	prob [1]: 0.008978	prob [2]: 0.206464	
+
+loss before back = 0.609694
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.276361	-0.749926	
+token 1:	0.041771	0.556121	
+token 2:	1.545263	0.157033	
+
+output embedding table:
+token 0:	1.030729	0.125805	
+token 1:	-2.144547	-0.081789	
+token 2:	0.022595	-1.194877	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.008523	grad [1]: -0.133286	grad [2]: 0.124763	
+grad [0]: 0.344499	grad [1]: 0.419378	grad [2]: -0.763877	
+grad [0]: -0.215442	grad [1]: 0.008978	grad [2]: 0.206464	
+embedding grads:
+
+grad [0]: 0.296984	grad [1]: -0.140567	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.565773	grad [3]: 0.940567	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.233346	grad [5]: -0.278868	
+
+
+loss after back = 0.587955
+
+epoch 3 
+
+
+prob [0]: 0.008102	prob [1]: 0.872238	prob [2]: 0.119660	
+prob [0]: 0.349842	prob [1]: 0.401808	prob [2]: 0.248350	
+prob [0]: 0.791161	prob [1]: 0.008564	prob [2]: 0.200275	
+
+loss before back = 0.587955
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.286260	-0.745241	
+token 1:	0.060630	0.524769	
+token 2:	1.553041	0.166329	
+
+output embedding table:
+token 0:	1.041181	0.121044	
+token 1:	-2.151281	-0.092039	
+token 2:	0.018877	-1.179867	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.008102	grad [1]: -0.127762	grad [2]: 0.119660	
+grad [0]: 0.349842	grad [1]: 0.401808	grad [2]: -0.751650	
+grad [0]: -0.208839	grad [1]: 0.008564	grad [2]: 0.200275	
+embedding grads:
+
+grad [0]: 0.285047	grad [1]: -0.131510	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.518089	grad [3]: 0.909278	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.229098	grad [5]: -0.266278	
+
+
+loss after back = 0.568307
+
+epoch 4 
+
+
+prob [0]: 0.007714	prob [1]: 0.877329	prob [2]: 0.114957	
+prob [0]: 0.354279	prob [1]: 0.385820	prob [2]: 0.259901	
+prob [0]: 0.797246	prob [1]: 0.008172	prob [2]: 0.194581	
+
+loss before back = 0.568307
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.295762	-0.740857	
+token 1:	0.077900	0.494460	
+token 2:	1.560677	0.175205	
+
+output embedding table:
+token 0:	1.051142	0.116580	
+token 1:	-2.158006	-0.101475	
+token 2:	0.015642	-1.165966	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.007714	grad [1]: -0.122671	grad [2]: 0.114957	
+grad [0]: 0.354279	grad [1]: 0.385820	grad [2]: -0.740099	
+grad [0]: -0.202754	grad [1]: 0.008172	grad [2]: 0.194581	
+embedding grads:
+
+grad [0]: 0.274101	grad [1]: -0.123410	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.475110	grad [3]: 0.880592	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.225011	grad [5]: -0.254874	
+
+
+loss after back = 0.550461
+
+epoch 5 
+
+
+prob [0]: 0.007354	prob [1]: 0.882036	prob [2]: 0.110610	
+prob [0]: 0.357928	prob [1]: 0.371254	prob [2]: 0.270819	
+prob [0]: 0.802875	prob [1]: 0.007802	prob [2]: 0.189322	
+
+loss before back = 0.550461
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.304899	-0.736743	
+token 1:	0.093737	0.465107	
+token 2:	1.568178	0.183701	
+
+output embedding table:
+token 0:	1.060647	0.112418	
+token 1:	-2.164705	-0.110175	
+token 2:	0.012835	-1.153104	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.007354	grad [1]: -0.117964	grad [2]: 0.110610	
+grad [0]: 0.357928	grad [1]: 0.371254	grad [2]: -0.729181	
+grad [0]: -0.197125	grad [1]: 0.007802	grad [2]: 0.189322	
+embedding grads:
+
+grad [0]: 0.264027	grad [1]: -0.116140	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.436340	grad [3]: 0.854254	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.221082	grad [5]: -0.244516	
+
+
+loss after back = 0.534175
+
+epoch 6 
+
+
+prob [0]: 0.007019	prob [1]: 0.886399	prob [2]: 0.106582	
+prob [0]: 0.360889	prob [1]: 0.357961	prob [2]: 0.281150	
+prob [0]: 0.808101	prob [1]: 0.007453	prob [2]: 0.184447	
+
+loss before back = 0.534175
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.313699	-0.732872	
+token 1:	0.108282	0.436631	
+token 2:	1.575547	0.191851	
+
+output embedding table:
+token 0:	1.069731	0.108564	
+token 1:	-2.171363	-0.118208	
+token 2:	0.010410	-1.141217	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.007019	grad [1]: -0.113601	grad [2]: 0.106582	
+grad [0]: 0.360889	grad [1]: 0.357961	grad [2]: -0.718850	
+grad [0]: -0.191899	grad [1]: 0.007453	grad [2]: 0.184447	
+embedding grads:
+
+grad [0]: 0.254726	grad [1]: -0.109595	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.401331	grad [3]: 0.830041	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.217303	grad [5]: -0.235080	
+
+
+loss after back = 0.519243
+
+epoch 7 
+
+
+prob [0]: 0.006707	prob [1]: 0.890453	prob [2]: 0.102840	
+prob [0]: 0.363251	prob [1]: 0.345810	prob [2]: 0.290939	
+prob [0]: 0.812968	prob [1]: 0.007123	prob [2]: 0.179910	
+
+loss before back = 0.519243
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.322190	-0.729219	
+token 1:	0.121659	0.408963	
+token 2:	1.582790	0.199687	
+
+output embedding table:
+token 0:	1.078421	0.105020	
+token 1:	-2.177969	-0.125632	
+token 2:	0.008326	-1.130249	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.006707	grad [1]: -0.109547	grad [2]: 0.102840	
+grad [0]: 0.363251	grad [1]: 0.345810	grad [2]: -0.709061	
+grad [0]: -0.187032	grad [1]: 0.007123	grad [2]: 0.179910	
+embedding grads:
+
+grad [0]: 0.246113	grad [1]: -0.103685	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.369678	grad [3]: 0.807751	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.213667	grad [5]: -0.226463	
+
+
+loss after back = 0.505493
+
+epoch 8 
+
+
+prob [0]: 0.006416	prob [1]: 0.894228	prob [2]: 0.099356	
+prob [0]: 0.365090	prob [1]: 0.334678	prob [2]: 0.300232	
+prob [0]: 0.817516	prob [1]: 0.006811	prob [2]: 0.175673	
+
+loss before back = 0.505493
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.330394	-0.725763	
+token 1:	0.133982	0.382038	
+token 2:	1.589913	0.207236	
+
+output embedding table:
+token 0:	1.086746	0.101787	
+token 1:	-2.184515	-0.132500	
+token 2:	0.006547	-1.120148	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.006416	grad [1]: -0.105772	grad [2]: 0.099356	
+grad [0]: 0.365090	grad [1]: 0.334678	grad [2]: -0.699768	
+grad [0]: -0.182484	grad [1]: 0.006811	grad [2]: 0.175673	
+embedding grads:
+
+grad [0]: 0.238114	grad [1]: -0.098334	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.341023	grad [3]: 0.787208	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.210166	grad [5]: -0.218574	
+
+
+loss after back = 0.492777
+
+epoch 9 
+
+
+prob [0]: 0.006144	prob [1]: 0.897752	prob [2]: 0.096104	
+prob [0]: 0.366471	prob [1]: 0.324459	prob [2]: 0.309070	
+prob [0]: 0.821780	prob [1]: 0.006517	prob [2]: 0.171704	
+
+loss before back = 0.492777
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.338331	-0.722485	
+token 1:	0.145349	0.355798	
+token 2:	1.596918	0.214522	
+
+output embedding table:
+token 0:	1.094731	0.098863	
+token 1:	-2.190996	-0.138857	
+token 2:	0.005042	-1.110867	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.006144	grad [1]: -0.102248	grad [2]: 0.096104	
+grad [0]: 0.366471	grad [1]: 0.324459	grad [2]: -0.690930	
+grad [0]: -0.178220	grad [1]: 0.006517	grad [2]: 0.171704	
+embedding grads:
+
+grad [0]: 0.230669	grad [1]: -0.093477	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.315048	grad [3]: 0.768254	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.206791	grad [5]: -0.211337	
+
+
+loss after back = 0.480968
+
+epoch 10 
+
+
+prob [0]: 0.005889	prob [1]: 0.901047	prob [2]: 0.093064	
+prob [0]: 0.367449	prob [1]: 0.315056	prob [2]: 0.317496	
+prob [0]: 0.825789	prob [1]: 0.006238	prob [2]: 0.167972	
+
+loss before back = 0.480968
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.346020	-0.719369	
+token 1:	0.155851	0.330190	
+token 2:	1.603811	0.221566	
+
+output embedding table:
+token 0:	1.102400	0.096246	
+token 1:	-2.197406	-0.144744	
+token 2:	0.003783	-1.102364	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.005889	grad [1]: -0.098953	grad [2]: 0.093064	
+grad [0]: 0.367449	grad [1]: 0.315056	grad [2]: -0.682504	
+grad [0]: -0.174211	grad [1]: 0.006238	grad [2]: 0.167972	
+embedding grads:
+
+grad [0]: 0.223723	grad [1]: -0.089059	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.291470	grad [3]: 0.750751	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.203535	grad [5]: -0.204684	
+
+
+loss after back = 0.469959
+
+epoch 11 
+
+
+prob [0]: 0.005650	prob [1]: 0.904134	prob [2]: 0.090216	
+prob [0]: 0.368070	prob [1]: 0.306384	prob [2]: 0.325546	
+prob [0]: 0.829571	prob [1]: 0.005975	prob [2]: 0.164454	
+
+loss before back = 0.469959
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.353478	-0.716400	
+token 1:	0.165567	0.305165	
+token 2:	1.610596	0.228389	
+
+output embedding table:
+token 0:	1.109773	0.093935	
+token 1:	-2.203742	-0.150195	
+token 2:	0.002747	-1.094601	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.005650	grad [1]: -0.095866	grad [2]: 0.090216	
+grad [0]: 0.368070	grad [1]: 0.306384	grad [2]: -0.674454	
+grad [0]: -0.170429	grad [1]: 0.005975	grad [2]: 0.164454	
+embedding grads:
+
+grad [0]: 0.217227	grad [1]: -0.085031	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.270041	grad [3]: 0.734572	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.200389	grad [5]: -0.198556	
+
+
+loss after back = 0.459655
+
+epoch 12 
+
+
+prob [0]: 0.005425	prob [1]: 0.907030	prob [2]: 0.087544	
+prob [0]: 0.368376	prob [1]: 0.298367	prob [2]: 0.333257	
+prob [0]: 0.833147	prob [1]: 0.005727	prob [2]: 0.161126	
+
+loss before back = 0.459655
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.360718	-0.713566	
+token 1:	0.174568	0.280679	
+token 2:	1.617276	0.235008	
+
+output embedding table:
+token 0:	1.116871	0.091924	
+token 1:	-2.210004	-0.155243	
+token 2:	0.001911	-1.087543	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.005425	grad [1]: -0.092970	grad [2]: 0.087544	
+grad [0]: 0.368376	grad [1]: 0.298367	grad [2]: -0.666743	
+grad [0]: -0.166853	grad [1]: 0.005727	grad [2]: 0.161126	
+embedding grads:
+
+grad [0]: 0.211142	grad [1]: -0.081353	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.250541	grad [3]: 0.719607	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.197346	grad [5]: -0.192902	
+
+
+loss after back = 0.449975
+
+epoch 13 
+
+
+prob [0]: 0.005213	prob [1]: 0.909754	prob [2]: 0.085033	
+prob [0]: 0.368400	prob [1]: 0.290937	prob [2]: 0.340663	
+prob [0]: 0.836539	prob [1]: 0.005491	prob [2]: 0.157970	
+
+loss before back = 0.449975
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.367757	-0.710854	
+token 1:	0.182919	0.256692	
+token 2:	1.623854	0.241438	
+
+output embedding table:
+token 0:	1.123710	0.090211	
+token 1:	-2.216190	-0.159915	
+token 2:	0.001257	-1.081158	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.005213	grad [1]: -0.090246	grad [2]: 0.085033	
+grad [0]: 0.368400	grad [1]: 0.290937	grad [2]: -0.659337	
+grad [0]: -0.163461	grad [1]: 0.005491	grad [2]: 0.157970	
+embedding grads:
+
+grad [0]: 0.205430	grad [1]: -0.077988	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.232776	grad [3]: 0.705756	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.194399	grad [5]: -0.187678	
+
+
+loss after back = 0.440849
+
+epoch 14 
+
+
+prob [0]: 0.005013	prob [1]: 0.912317	prob [2]: 0.082670	
+prob [0]: 0.368172	prob [1]: 0.284034	prob [2]: 0.347794	
+prob [0]: 0.839763	prob [1]: 0.005268	prob [2]: 0.154968	
+
+loss before back = 0.440849
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.374604	-0.708255	
+token 1:	0.190679	0.233167	
+token 2:	1.630334	0.247694	
+
+output embedding table:
+token 0:	1.130308	0.088791	
+token 1:	-2.222299	-0.164236	
+token 2:	0.000769	-1.075416	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.005013	grad [1]: -0.087683	grad [2]: 0.082670	
+grad [0]: 0.368172	grad [1]: 0.284034	grad [2]: -0.652206	
+grad [0]: -0.160237	grad [1]: 0.005268	grad [2]: 0.154968	
+embedding grads:
+
+grad [0]: 0.200059	grad [1]: -0.074905	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.216574	grad [3]: 0.692929	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.191540	grad [5]: -0.182843	
+
+
+loss after back = 0.432215
+
+epoch 15 
+
+
+prob [0]: 0.004824	prob [1]: 0.914734	prob [2]: 0.080442	
+prob [0]: 0.367716	prob [1]: 0.277604	prob [2]: 0.354680	
+prob [0]: 0.842837	prob [1]: 0.005057	prob [2]: 0.152106	
+
+loss before back = 0.432215
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.381273	-0.705758	
+token 1:	0.197898	0.210069	
+token 2:	1.636719	0.253788	
+
+output embedding table:
+token 0:	1.136678	0.087659	
+token 1:	-2.228332	-0.168229	
+token 2:	0.000431	-1.070292	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.004824	grad [1]: -0.085266	grad [2]: 0.080442	
+grad [0]: 0.367716	grad [1]: 0.277604	grad [2]: -0.645320	
+grad [0]: -0.157163	grad [1]: 0.005057	grad [2]: 0.152106	
+embedding grads:
+
+grad [0]: 0.195001	grad [1]: -0.072076	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.201784	grad [3]: 0.681045	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.188764	grad [5]: -0.178362	
+
+
+loss after back = 0.424018
+
+epoch 16 
+
+
+prob [0]: 0.004646	prob [1]: 0.917016	prob [2]: 0.078339	
+prob [0]: 0.367053	prob [1]: 0.271601	prob [2]: 0.361346	
+prob [0]: 0.845774	prob [1]: 0.004857	prob [2]: 0.149369	
+
+loss before back = 0.424018
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.387773	-0.703355	
+token 1:	0.204624	0.187368	
+token 2:	1.643011	0.259734	
+
+output embedding table:
+token 0:	1.142836	0.086811	
+token 1:	-2.234289	-0.171913	
+token 2:	0.000231	-1.065760	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.004646	grad [1]: -0.082984	grad [2]: 0.078339	
+grad [0]: 0.367053	grad [1]: 0.271601	grad [2]: -0.638654	
+grad [0]: -0.154226	grad [1]: 0.004857	grad [2]: 0.149369	
+embedding grads:
+
+grad [0]: 0.190231	grad [1]: -0.069478	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.188270	grad [3]: 0.670031	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.186064	grad [5]: -0.174205	
+
+
+loss after back = 0.416210
+
+epoch 17 
+
+
+prob [0]: 0.004476	prob [1]: 0.919172	prob [2]: 0.076351	
+prob [0]: 0.366201	prob [1]: 0.265980	prob [2]: 0.367819	
+prob [0]: 0.848586	prob [1]: 0.004667	prob [2]: 0.146747	
+
+loss before back = 0.416210
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.394114	-0.701039	
+token 1:	0.210899	0.165033	
+token 2:	1.649213	0.265541	
+
+output embedding table:
+token 0:	1.148794	0.086241	
+token 1:	-2.240172	-0.175306	
+token 2:	0.000156	-1.061797	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.004476	grad [1]: -0.080828	grad [2]: 0.076351	
+grad [0]: 0.366201	grad [1]: 0.265980	grad [2]: -0.632181	
+grad [0]: -0.151414	grad [1]: 0.004667	grad [2]: 0.146747	
+embedding grads:
+
+grad [0]: 0.185726	grad [1]: -0.067088	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.175914	grad [3]: 0.659818	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.183434	grad [5]: -0.170344	
+
+
+loss after back = 0.408750
+
+epoch 18 
+
+
+prob [0]: 0.004316	prob [1]: 0.921213	prob [2]: 0.074471	
+prob [0]: 0.365175	prob [1]: 0.260704	prob [2]: 0.374120	
+prob [0]: 0.851285	prob [1]: 0.004486	prob [2]: 0.144229	
+
+loss before back = 0.408750
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.400305	-0.698803	
+token 1:	0.216763	0.143039	
+token 2:	1.655327	0.271219	
+
+output embedding table:
+token 0:	1.154562	0.085945	
+token 1:	-2.245981	-0.178425	
+token 2:	0.000196	-1.058382	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.004316	grad [1]: -0.078787	grad [2]: 0.074471	
+grad [0]: 0.365175	grad [1]: 0.260704	grad [2]: -0.625880	
+grad [0]: -0.148715	grad [1]: 0.004486	grad [2]: 0.144229	
+embedding grads:
+
+grad [0]: 0.181465	grad [1]: -0.064889	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.164609	grad [3]: 0.650347	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.180870	grad [5]: -0.166754	
+
+
+loss after back = 0.401599
+
+epoch 19 
+
+
+prob [0]: 0.004164	prob [1]: 0.923147	prob [2]: 0.072689	
+prob [0]: 0.363988	prob [1]: 0.255740	prob [2]: 0.380272	
+prob [0]: 0.853880	prob [1]: 0.004315	prob [2]: 0.141805	
+
+loss before back = 0.401599
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.406354	-0.696640	
+token 1:	0.222250	0.121361	
+token 2:	1.661356	0.276777	
+
+output embedding table:
+token 0:	1.160153	0.085917	
+token 1:	-2.251717	-0.181284	
+token 2:	0.000341	-1.055495	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.004164	grad [1]: -0.076853	grad [2]: 0.072689	
+grad [0]: 0.363988	grad [1]: 0.255740	grad [2]: -0.619728	
+grad [0]: -0.146120	grad [1]: 0.004315	grad [2]: 0.141805	
+embedding grads:
+
+grad [0]: 0.177431	grad [1]: -0.062863	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.154261	grad [3]: 0.641561	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.178367	grad [5]: -0.163412	
+
+
+loss after back = 0.394725
+
+epoch 20 
+
+
+prob [0]: 0.004019	prob [1]: 0.924982	prob [2]: 0.070999	
+prob [0]: 0.362651	prob [1]: 0.251055	prob [2]: 0.386295	
+prob [0]: 0.856381	prob [1]: 0.004151	prob [2]: 0.139468	
+
+loss before back = 0.394725
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.412268	-0.694545	
+token 1:	0.227392	0.099976	
+token 2:	1.667302	0.282224	
+
+output embedding table:
+token 0:	1.165575	0.086153	
+token 1:	-2.257382	-0.183896	
+token 2:	0.000584	-1.053118	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.004019	grad [1]: -0.075018	grad [2]: 0.070999	
+grad [0]: 0.362651	grad [1]: 0.251055	grad [2]: -0.613705	
+grad [0]: -0.143619	grad [1]: 0.004151	grad [2]: 0.139468	
+embedding grads:
+
+grad [0]: 0.173606	grad [1]: -0.060995	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.144783	grad [3]: 0.633409	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.175920	grad [5]: -0.160299	
+
+
+loss after back = 0.388097
+
+epoch 21 
+
+
+prob [0]: 0.003881	prob [1]: 0.926724	prob [2]: 0.069395	
+prob [0]: 0.361172	prob [1]: 0.246622	prob [2]: 0.392206	
+prob [0]: 0.858795	prob [1]: 0.003996	prob [2]: 0.137209	
+
+loss before back = 0.388097
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.418055	-0.692511	
+token 1:	0.232218	0.078862	
+token 2:	1.673166	0.287568	
+
+output embedding table:
+token 0:	1.170838	0.086647	
+token 1:	-2.262978	-0.186274	
+token 2:	0.000917	-1.051234	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.003881	grad [1]: -0.073276	grad [2]: 0.069395	
+grad [0]: 0.361172	grad [1]: 0.246622	grad [2]: -0.607794	
+grad [0]: -0.141205	grad [1]: 0.003996	grad [2]: 0.137209	
+embedding grads:
+
+grad [0]: 0.169976	grad [1]: -0.059272	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.136102	grad [3]: 0.625842	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.173526	grad [5]: -0.157397	
+
+
+loss after back = 0.381689
+
+epoch 22 
+
+
+prob [0]: 0.003749	prob [1]: 0.928380	prob [2]: 0.067871	
+prob [0]: 0.359560	prob [1]: 0.242416	prob [2]: 0.398024	
+prob [0]: 0.861130	prob [1]: 0.003849	prob [2]: 0.135021	
+
+loss before back = 0.381689
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.423721	-0.690536	
+token 1:	0.236755	0.058001	
+token 2:	1.678950	0.292814	
+
+output embedding table:
+token 0:	1.175950	0.087393	
+token 1:	-2.268505	-0.188429	
+token 2:	0.001332	-1.049825	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.003749	grad [1]: -0.071620	grad [2]: 0.067871	
+grad [0]: 0.359560	grad [1]: 0.242416	grad [2]: -0.601976	
+grad [0]: -0.138870	grad [1]: 0.003849	grad [2]: 0.135021	
+embedding grads:
+
+grad [0]: 0.166528	grad [1]: -0.057682	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.128148	grad [3]: 0.618816	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.171180	grad [5]: -0.154689	
+
+
+loss after back = 0.375476
+
+epoch 23 
+
+
+prob [0]: 0.003624	prob [1]: 0.929955	prob [2]: 0.066421	
+prob [0]: 0.357821	prob [1]: 0.238415	prob [2]: 0.403764	
+prob [0]: 0.863392	prob [1]: 0.003708	prob [2]: 0.132900	
+
+loss before back = 0.375476
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.429272	-0.688613	
+token 1:	0.241027	0.037374	
+token 2:	1.684656	0.297970	
+
+output embedding table:
+token 0:	1.180920	0.088388	
+token 1:	-2.273966	-0.190371	
+token 2:	0.001824	-1.048878	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.003624	grad [1]: -0.070045	grad [2]: 0.066421	
+grad [0]: 0.357821	grad [1]: 0.238415	grad [2]: -0.596236	
+grad [0]: -0.136608	grad [1]: 0.003708	grad [2]: 0.132900	
+embedding grads:
+
+grad [0]: 0.163248	grad [1]: -0.056215	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.120860	grad [3]: 0.612290	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.168879	grad [5]: -0.152159	
+
+
+loss after back = 0.369438
+
+epoch 24 
+
+
+prob [0]: 0.003505	prob [1]: 0.931455	prob [2]: 0.065040	
+prob [0]: 0.355960	prob [1]: 0.234598	prob [2]: 0.409442	
+prob [0]: 0.865586	prob [1]: 0.003574	prob [2]: 0.130840	
+
+loss before back = 0.369438
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.434713	-0.686739	
+token 1:	0.245055	0.016964	
+token 2:	1.690285	0.303042	
+
+output embedding table:
+token 0:	1.185753	0.089624	
+token 1:	-2.279361	-0.192108	
+token 2:	0.002386	-1.048377	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.003505	grad [1]: -0.068545	grad [2]: 0.065040	
+grad [0]: 0.355960	grad [1]: 0.234598	grad [2]: -0.590558	
+grad [0]: -0.134414	grad [1]: 0.003574	grad [2]: 0.130840	
+embedding grads:
+
+grad [0]: 0.160127	grad [1]: -0.054861	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.114184	grad [3]: 0.606225	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.166620	grad [5]: -0.149796	
+
+
+loss after back = 0.363555
+
+epoch 25 
+
+
+prob [0]: 0.003391	prob [1]: 0.932885	prob [2]: 0.063724	
+prob [0]: 0.353982	prob [1]: 0.230946	prob [2]: 0.415072	
+prob [0]: 0.867719	prob [1]: 0.003446	prob [2]: 0.128835	
+
+loss before back = 0.363555
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.440051	-0.684910	
+token 1:	0.248862	-0.003244	
+token 2:	1.695839	0.308036	
+
+output embedding table:
+token 0:	1.190457	0.091098	
+token 1:	-2.284694	-0.193651	
+token 2:	0.003015	-1.048308	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.003391	grad [1]: -0.067115	grad [2]: 0.063724	
+grad [0]: 0.353982	grad [1]: 0.230946	grad [2]: -0.584928	
+grad [0]: -0.132281	grad [1]: 0.003446	grad [2]: 0.128835	
+embedding grads:
+
+grad [0]: 0.157152	grad [1]: -0.053610	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.108069	grad [3]: 0.600584	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.164399	grad [5]: -0.147585	
+
+
+loss after back = 0.357808
+
+epoch 26 
+
+
+prob [0]: 0.003282	prob [1]: 0.934249	prob [2]: 0.062469	
+prob [0]: 0.351891	prob [1]: 0.227442	prob [2]: 0.420666	
+prob [0]: 0.869795	prob [1]: 0.003324	prob [2]: 0.126882	
+
+loss before back = 0.357808
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.445289	-0.683123	
+token 1:	0.252464	-0.023263	
+token 2:	1.701319	0.312955	
+
+output embedding table:
+token 0:	1.195037	0.092804	
+token 1:	-2.289964	-0.195007	
+token 2:	0.003704	-1.048658	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.003282	grad [1]: -0.065751	grad [2]: 0.062469	
+grad [0]: 0.351891	grad [1]: 0.227442	grad [2]: -0.579334	
+grad [0]: -0.130205	grad [1]: 0.003324	grad [2]: 0.126882	
+embedding grads:
+
+grad [0]: 0.154316	grad [1]: -0.052456	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.102470	grad [3]: 0.595332	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.162215	grad [5]: -0.145516	
+
+
+loss after back = 0.352184
+
+epoch 27 
+
+
+prob [0]: 0.003177	prob [1]: 0.935551	prob [2]: 0.061271	
+prob [0]: 0.349691	prob [1]: 0.224071	prob [2]: 0.426238	
+prob [0]: 0.871817	prob [1]: 0.003207	prob [2]: 0.124975	
+
+loss before back = 0.352184
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.450433	-0.681375	
+token 1:	0.255880	-0.043107	
+token 2:	1.706726	0.317806	
+
+output embedding table:
+token 0:	1.199501	0.094737	
+token 1:	-2.295174	-0.196182	
+token 2:	0.004450	-1.049415	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.003177	grad [1]: -0.064449	grad [2]: 0.061271	
+grad [0]: 0.349691	grad [1]: 0.224071	grad [2]: -0.573762	
+grad [0]: -0.128183	grad [1]: 0.003207	grad [2]: 0.124975	
+embedding grads:
+
+grad [0]: 0.151609	grad [1]: -0.051390	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.097347	grad [3]: 0.590438	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.160065	grad [5]: -0.143578	
+
+
+loss after back = 0.346667
+
+epoch 28 
+
+
+prob [0]: 0.003077	prob [1]: 0.936796	prob [2]: 0.060127	
+prob [0]: 0.347383	prob [1]: 0.220819	prob [2]: 0.431798	
+prob [0]: 0.873791	prob [1]: 0.003096	prob [2]: 0.123113	
+
+loss before back = 0.346667
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.455487	-0.679662	
+token 1:	0.259124	-0.062789	
+token 2:	1.712062	0.322592	
+
+output embedding table:
+token 0:	1.203852	0.096890	
+token 1:	-2.300324	-0.197185	
+token 2:	0.005249	-1.050566	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.003077	grad [1]: -0.063204	grad [2]: 0.060127	
+grad [0]: 0.347383	grad [1]: 0.220819	grad [2]: -0.568202	
+grad [0]: -0.126209	grad [1]: 0.003096	grad [2]: 0.123113	
+embedding grads:
+
+grad [0]: 0.149024	grad [1]: -0.050407	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.092661	grad [3]: 0.585869	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.157946	grad [5]: -0.141761	
+
+
+loss after back = 0.341245
+
+epoch 29 
+
+
+prob [0]: 0.002982	prob [1]: 0.937986	prob [2]: 0.059032	
+prob [0]: 0.344970	prob [1]: 0.217673	prob [2]: 0.437357	
+prob [0]: 0.875719	prob [1]: 0.002990	prob [2]: 0.121291	
+
+loss before back = 0.341245
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.460454	-0.677982	
+token 1:	0.262213	-0.082318	
+token 2:	1.717327	0.327317	
+
+output embedding table:
+token 0:	1.208097	0.099260	
+token 1:	-2.305417	-0.198022	
+token 2:	0.006098	-1.052099	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002982	grad [1]: -0.062014	grad [2]: 0.059032	
+grad [0]: 0.344970	grad [1]: 0.217673	grad [2]: -0.562643	
+grad [0]: -0.124281	grad [1]: 0.002990	grad [2]: 0.121291	
+embedding grads:
+
+grad [0]: 0.146552	grad [1]: -0.049500	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.088378	grad [3]: 0.581596	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.155857	grad [5]: -0.140056	
+
+
+loss after back = 0.335906
+
+epoch 30 
+
+
+prob [0]: 0.002890	prob [1]: 0.939125	prob [2]: 0.057985	
+prob [0]: 0.342454	prob [1]: 0.214620	prob [2]: 0.442926	
+prob [0]: 0.877605	prob [1]: 0.002888	prob [2]: 0.119507	
+
+loss before back = 0.335906
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.465339	-0.676332	
+token 1:	0.265159	-0.101704	
+token 2:	1.722522	0.331985	
+
+output embedding table:
+token 0:	1.212238	0.101841	
+token 1:	-2.310453	-0.198699	
+token 2:	0.006992	-1.054003	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002890	grad [1]: -0.060875	grad [2]: 0.057985	
+grad [0]: 0.342454	grad [1]: 0.214620	grad [2]: -0.557074	
+grad [0]: -0.122395	grad [1]: 0.002888	grad [2]: 0.119507	
+embedding grads:
+
+grad [0]: 0.144187	grad [1]: -0.048665	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.084468	grad [3]: 0.577590	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.153795	grad [5]: -0.138455	
+
+
+loss after back = 0.330641
+
+epoch 31 
+
+
+prob [0]: 0.002802	prob [1]: 0.940216	prob [2]: 0.056982	
+prob [0]: 0.339837	prob [1]: 0.211650	prob [2]: 0.448513	
+prob [0]: 0.879451	prob [1]: 0.002791	prob [2]: 0.117759	
+
+loss before back = 0.330641
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.470146	-0.674710	
+token 1:	0.267975	-0.120957	
+token 2:	1.727648	0.336601	
+
+output embedding table:
+token 0:	1.216282	0.104627	
+token 1:	-2.315434	-0.199222	
+token 2:	0.007929	-1.056266	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002802	grad [1]: -0.059784	grad [2]: 0.056982	
+grad [0]: 0.339837	grad [1]: 0.211650	grad [2]: -0.551487	
+grad [0]: -0.120549	grad [1]: 0.002791	grad [2]: 0.117759	
+embedding grads:
+
+grad [0]: 0.141924	grad [1]: -0.047895	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.080901	grad [3]: 0.573824	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.151759	grad [5]: -0.136949	
+
+
+loss after back = 0.325439
+
+epoch 32 
+
+
+prob [0]: 0.002718	prob [1]: 0.941261	prob [2]: 0.056021	
+prob [0]: 0.337120	prob [1]: 0.208754	prob [2]: 0.454126	
+prob [0]: 0.881260	prob [1]: 0.002698	prob [2]: 0.116042	
+
+loss before back = 0.325439
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.474877	-0.673113	
+token 1:	0.270671	-0.140085	
+token 2:	1.732707	0.341166	
+
+output embedding table:
+token 0:	1.220232	0.107612	
+token 1:	-2.320361	-0.199595	
+token 2:	0.008906	-1.058878	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002718	grad [1]: -0.058739	grad [2]: 0.056021	
+grad [0]: 0.337120	grad [1]: 0.208754	grad [2]: -0.545874	
+grad [0]: -0.118740	grad [1]: 0.002698	grad [2]: 0.116042	
+embedding grads:
+
+grad [0]: 0.139755	grad [1]: -0.047187	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.077651	grad [3]: 0.570271	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.149747	grad [5]: -0.135532	
+
+
+loss after back = 0.320293
+
+epoch 33 
+
+
+prob [0]: 0.002637	prob [1]: 0.942264	prob [2]: 0.055099	
+prob [0]: 0.334304	prob [1]: 0.205921	prob [2]: 0.459775	
+prob [0]: 0.883035	prob [1]: 0.002608	prob [2]: 0.114356	
+
+loss before back = 0.320293
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.479535	-0.671540	
+token 1:	0.273260	-0.159094	
+token 2:	1.737699	0.345683	
+
+output embedding table:
+token 0:	1.224092	0.110792	
+token 1:	-2.325235	-0.199826	
+token 2:	0.009920	-1.061827	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002637	grad [1]: -0.057736	grad [2]: 0.055099	
+grad [0]: 0.334304	grad [1]: 0.205921	grad [2]: -0.540225	
+grad [0]: -0.116965	grad [1]: 0.002608	grad [2]: 0.114356	
+embedding grads:
+
+grad [0]: 0.137676	grad [1]: -0.046536	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.074694	grad [3]: 0.566907	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.147758	grad [5]: -0.134197	
+
+
+loss after back = 0.315195
+
+epoch 34 
+
+
+prob [0]: 0.002559	prob [1]: 0.943226	prob [2]: 0.054215	
+prob [0]: 0.331391	prob [1]: 0.203144	prob [2]: 0.465465	
+prob [0]: 0.884778	prob [1]: 0.002523	prob [2]: 0.112699	
+
+loss before back = 0.315195
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.484124	-0.669989	
+token 1:	0.275749	-0.177991	
+token 2:	1.742624	0.350157	
+
+output embedding table:
+token 0:	1.227866	0.114160	
+token 1:	-2.330057	-0.199918	
+token 2:	0.010969	-1.065103	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002559	grad [1]: -0.056774	grad [2]: 0.054215	
+grad [0]: 0.331391	grad [1]: 0.203144	grad [2]: -0.534535	
+grad [0]: -0.115222	grad [1]: 0.002523	grad [2]: 0.112699	
+embedding grads:
+
+grad [0]: 0.135682	grad [1]: -0.045938	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.072007	grad [3]: 0.563705	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.145792	grad [5]: -0.132937	
+
+
+loss after back = 0.310139
+
+epoch 35 
+
+
+prob [0]: 0.002484	prob [1]: 0.944151	prob [2]: 0.053365	
+prob [0]: 0.328381	prob [1]: 0.200415	prob [2]: 0.471204	
+prob [0]: 0.886490	prob [1]: 0.002441	prob [2]: 0.111069	
+
+loss before back = 0.310139
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.488647	-0.668458	
+token 1:	0.278150	-0.196781	
+token 2:	1.747483	0.354588	
+
+output embedding table:
+token 0:	1.231556	0.117711	
+token 1:	-2.334829	-0.199877	
+token 2:	0.012050	-1.068695	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002484	grad [1]: -0.055849	grad [2]: 0.053365	
+grad [0]: 0.328381	grad [1]: 0.200415	grad [2]: -0.528796	
+grad [0]: -0.113510	grad [1]: 0.002441	grad [2]: 0.111069	
+embedding grads:
+
+grad [0]: 0.133767	grad [1]: -0.045391	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.069570	grad [3]: 0.560643	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.143845	grad [5]: -0.131746	
+
+
+loss after back = 0.305120
+
+epoch 36 
+
+
+prob [0]: 0.002412	prob [1]: 0.945040	prob [2]: 0.052549	
+prob [0]: 0.325276	prob [1]: 0.197726	prob [2]: 0.476997	
+prob [0]: 0.888173	prob [1]: 0.002363	prob [2]: 0.109464	
+
+loss before back = 0.305120
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.493106	-0.666945	
+token 1:	0.280469	-0.215469	
+token 2:	1.752278	0.358979	
+
+output embedding table:
+token 0:	1.235167	0.121439	
+token 1:	-2.339551	-0.199707	
+token 2:	0.013161	-1.072593	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002412	grad [1]: -0.054960	grad [2]: 0.052549	
+grad [0]: 0.325276	grad [1]: 0.197726	grad [2]: -0.523003	
+grad [0]: -0.111827	grad [1]: 0.002363	grad [2]: 0.109464	
+embedding grads:
+
+grad [0]: 0.131927	grad [1]: -0.044889	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.067363	grad [3]: 0.557698	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.141919	grad [5]: -0.130619	
+
+
+loss after back = 0.300133
+
+epoch 37 
+
+
+prob [0]: 0.002343	prob [1]: 0.945894	prob [2]: 0.051763	
+prob [0]: 0.322078	prob [1]: 0.195072	prob [2]: 0.482850	
+prob [0]: 0.889830	prob [1]: 0.002288	prob [2]: 0.107882	
+
+loss before back = 0.300133
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.497503	-0.665448	
+token 1:	0.282714	-0.234059	
+token 2:	1.757009	0.363333	
+
+output embedding table:
+token 0:	1.238701	0.125338	
+token 1:	-2.344224	-0.199412	
+token 2:	0.014300	-1.076787	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002343	grad [1]: -0.054106	grad [2]: 0.051763	
+grad [0]: 0.322078	grad [1]: 0.195072	grad [2]: -0.517150	
+grad [0]: -0.110170	grad [1]: 0.002288	grad [2]: 0.107882	
+embedding grads:
+
+grad [0]: 0.130158	grad [1]: -0.044431	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.065368	grad [3]: 0.554847	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.140011	grad [5]: -0.129550	
+
+
+loss after back = 0.295173
+
+epoch 38 
+
+
+prob [0]: 0.002276	prob [1]: 0.946717	prob [2]: 0.051007	
+prob [0]: 0.318787	prob [1]: 0.192447	prob [2]: 0.488766	
+prob [0]: 0.891461	prob [1]: 0.002216	prob [2]: 0.106323	
+
+loss before back = 0.295173
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.501842	-0.663967	
+token 1:	0.284893	-0.252554	
+token 2:	1.761676	0.367652	
+
+output embedding table:
+token 0:	1.242162	0.129402	
+token 1:	-2.348849	-0.198999	
+token 2:	0.015465	-1.081264	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002276	grad [1]: -0.053283	grad [2]: 0.051007	
+grad [0]: 0.318787	grad [1]: 0.192447	grad [2]: -0.511234	
+grad [0]: -0.108539	grad [1]: 0.002216	grad [2]: 0.106323	
+embedding grads:
+
+grad [0]: 0.128456	grad [1]: -0.044013	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.063568	grad [3]: 0.552069	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.138121	grad [5]: -0.128534	
+
+
+loss after back = 0.290238
+
+epoch 39 
+
+
+prob [0]: 0.002212	prob [1]: 0.947509	prob [2]: 0.050279	
+prob [0]: 0.315404	prob [1]: 0.189845	prob [2]: 0.494750	
+prob [0]: 0.893068	prob [1]: 0.002146	prob [2]: 0.104786	
+
+loss before back = 0.290238
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.506124	-0.662500	
+token 1:	0.287012	-0.270956	
+token 2:	1.766280	0.371936	
+
+output embedding table:
+token 0:	1.245551	0.133626	
+token 1:	-2.353427	-0.198470	
+token 2:	0.016654	-1.086017	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002212	grad [1]: -0.052491	grad [2]: 0.050279	
+grad [0]: 0.315404	grad [1]: 0.189845	grad [2]: -0.505250	
+grad [0]: -0.106932	grad [1]: 0.002146	grad [2]: 0.104786	
+embedding grads:
+
+grad [0]: 0.126818	grad [1]: -0.043633	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.061948	grad [3]: 0.549343	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.136248	grad [5]: -0.127566	
+
+
+loss after back = 0.285324
+
+epoch 40 
+
+
+prob [0]: 0.002150	prob [1]: 0.948273	prob [2]: 0.049577	
+prob [0]: 0.311933	prob [1]: 0.187262	prob [2]: 0.500806	
+prob [0]: 0.894651	prob [1]: 0.002080	prob [2]: 0.103269	
+
+loss before back = 0.285324
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.510351	-0.661046	
+token 1:	0.289077	-0.289268	
+token 2:	1.770822	0.376188	
+
+output embedding table:
+token 0:	1.248872	0.138002	
+token 1:	-2.357958	-0.197830	
+token 2:	0.017864	-1.091033	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002150	grad [1]: -0.051727	grad [2]: 0.049577	
+grad [0]: 0.311933	grad [1]: 0.187262	grad [2]: -0.499194	
+grad [0]: -0.105349	grad [1]: 0.002080	grad [2]: 0.103269	
+embedding grads:
+
+grad [0]: 0.125239	grad [1]: -0.043288	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.060492	grad [3]: 0.546650	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.134393	grad [5]: -0.126642	
+
+
+loss after back = 0.280429
+
+epoch 41 
+
+
+prob [0]: 0.002090	prob [1]: 0.949010	prob [2]: 0.048900	
+prob [0]: 0.308373	prob [1]: 0.184693	prob [2]: 0.506934	
+prob [0]: 0.896213	prob [1]: 0.002016	prob [2]: 0.101771	
+
+loss before back = 0.280429
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.514526	-0.659603	
+token 1:	0.291093	-0.307489	
+token 2:	1.775301	0.380410	
+
+output embedding table:
+token 0:	1.252127	0.142524	
+token 1:	-2.362444	-0.197084	
+token 2:	0.019095	-1.096302	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002090	grad [1]: -0.050990	grad [2]: 0.048900	
+grad [0]: 0.308373	grad [1]: 0.184693	grad [2]: -0.493066	
+grad [0]: -0.103787	grad [1]: 0.002016	grad [2]: 0.101771	
+embedding grads:
+
+grad [0]: 0.123717	grad [1]: -0.042976	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.059187	grad [3]: 0.543969	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.132553	grad [5]: -0.125757	
+
+
+loss after back = 0.275553
+
+epoch 42 
+
+
+prob [0]: 0.002033	prob [1]: 0.949720	prob [2]: 0.048247	
+prob [0]: 0.304728	prob [1]: 0.182134	prob [2]: 0.513138	
+prob [0]: 0.897753	prob [1]: 0.001955	prob [2]: 0.100292	
+
+loss before back = 0.275553
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.518650	-0.658170	
+token 1:	0.293066	-0.325621	
+token 2:	1.779720	0.384602	
+
+output embedding table:
+token 0:	1.255319	0.147187	
+token 1:	-2.366884	-0.196235	
+token 2:	0.020343	-1.101813	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.002033	grad [1]: -0.050280	grad [2]: 0.048247	
+grad [0]: 0.304728	grad [1]: 0.182134	grad [2]: -0.486862	
+grad [0]: -0.102247	grad [1]: 0.001955	grad [2]: 0.100292	
+embedding grads:
+
+grad [0]: 0.122249	grad [1]: -0.042694	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.058020	grad [3]: 0.541283	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.130730	grad [5]: -0.124908	
+
+
+loss after back = 0.270693
+
+epoch 43 
+
+
+prob [0]: 0.001977	prob [1]: 0.950407	prob [2]: 0.047616	
+prob [0]: 0.300999	prob [1]: 0.179583	prob [2]: 0.519418	
+prob [0]: 0.899273	prob [1]: 0.001896	prob [2]: 0.098831	
+
+loss before back = 0.270693
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.522725	-0.656747	
+token 1:	0.295000	-0.343664	
+token 2:	1.784078	0.388765	
+
+output embedding table:
+token 0:	1.258449	0.151984	
+token 1:	-2.371280	-0.195288	
+token 2:	0.021609	-1.107557	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001977	grad [1]: -0.049593	grad [2]: 0.047616	
+grad [0]: 0.300999	grad [1]: 0.179583	grad [2]: -0.480582	
+grad [0]: -0.100727	grad [1]: 0.001896	grad [2]: 0.098831	
+embedding grads:
+
+grad [0]: 0.120831	grad [1]: -0.042441	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.056978	grad [3]: 0.538575	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.128922	grad [5]: -0.124091	
+
+
+loss after back = 0.265850
+
+epoch 44 
+
+
+prob [0]: 0.001924	prob [1]: 0.951071	prob [2]: 0.047005	
+prob [0]: 0.297190	prob [1]: 0.177036	prob [2]: 0.525774	
+prob [0]: 0.900773	prob [1]: 0.001840	prob [2]: 0.097387	
+
+loss before back = 0.265850
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.526752	-0.655332	
+token 1:	0.296900	-0.361617	
+token 2:	1.788375	0.392902	
+
+output embedding table:
+token 0:	1.261521	0.156908	
+token 1:	-2.375632	-0.194247	
+token 2:	0.022889	-1.113522	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001924	grad [1]: -0.048929	grad [2]: 0.047005	
+grad [0]: 0.297190	grad [1]: 0.177036	grad [2]: -0.474226	
+grad [0]: -0.099227	grad [1]: 0.001840	grad [2]: 0.097387	
+embedding grads:
+
+grad [0]: 0.119461	grad [1]: -0.042213	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.056051	grad [3]: 0.535827	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.127129	grad [5]: -0.123302	
+
+
+loss after back = 0.261024
+
+epoch 45 
+
+
+prob [0]: 0.001872	prob [1]: 0.951713	prob [2]: 0.046415	
+prob [0]: 0.293302	prob [1]: 0.174491	prob [2]: 0.532207	
+prob [0]: 0.902255	prob [1]: 0.001785	prob [2]: 0.095960	
+
+loss before back = 0.261024
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.530734	-0.653925	
+token 1:	0.298768	-0.379478	
+token 2:	1.792613	0.397012	
+
+output embedding table:
+token 0:	1.264536	0.161952	
+token 1:	-2.379941	-0.193116	
+token 2:	0.024182	-1.119697	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001872	grad [1]: -0.048287	grad [2]: 0.046415	
+grad [0]: 0.293302	grad [1]: 0.174491	grad [2]: -0.467793	
+grad [0]: -0.097745	grad [1]: 0.001785	grad [2]: 0.095960	
+embedding grads:
+
+grad [0]: 0.118136	grad [1]: -0.042011	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.055226	grad [3]: 0.533024	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.125352	grad [5]: -0.122537	
+
+
+loss after back = 0.256214
+
+epoch 46 
+
+
+prob [0]: 0.001822	prob [1]: 0.952335	prob [2]: 0.045843	
+prob [0]: 0.289339	prob [1]: 0.171945	prob [2]: 0.538716	
+prob [0]: 0.903718	prob [1]: 0.001733	prob [2]: 0.094549	
+
+loss before back = 0.256214
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.534672	-0.652525	
+token 1:	0.300609	-0.397245	
+token 2:	1.796791	0.401096	
+
+output embedding table:
+token 0:	1.267497	0.167110	
+token 1:	-2.384206	-0.191899	
+token 2:	0.025486	-1.126072	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001822	grad [1]: -0.047665	grad [2]: 0.045843	
+grad [0]: 0.289339	grad [1]: 0.171945	grad [2]: -0.461284	
+grad [0]: -0.096282	grad [1]: 0.001733	grad [2]: 0.094549	
+embedding grads:
+
+grad [0]: 0.116854	grad [1]: -0.041830	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.054495	grad [3]: 0.530152	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.123590	grad [5]: -0.121794	
+
+
+loss after back = 0.251423
+
+epoch 47 
+
+
+prob [0]: 0.001774	prob [1]: 0.952937	prob [2]: 0.045289	
+prob [0]: 0.285304	prob [1]: 0.169398	prob [2]: 0.545298	
+prob [0]: 0.905163	prob [1]: 0.001683	prob [2]: 0.093154	
+
+loss before back = 0.251423
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.538567	-0.651131	
+token 1:	0.302425	-0.414917	
+token 2:	1.800911	0.405156	
+
+output embedding table:
+token 0:	1.270405	0.172376	
+token 1:	-2.388428	-0.190600	
+token 2:	0.026801	-1.132636	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001774	grad [1]: -0.047063	grad [2]: 0.045289	
+grad [0]: 0.285304	grad [1]: 0.169398	grad [2]: -0.454702	
+grad [0]: -0.094837	grad [1]: 0.001683	grad [2]: 0.093154	
+embedding grads:
+
+grad [0]: 0.115612	grad [1]: -0.041671	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.053846	grad [3]: 0.527197	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.121843	grad [5]: -0.121069	
+
+
+loss after back = 0.246651
+
+epoch 48 
+
+
+prob [0]: 0.001728	prob [1]: 0.953520	prob [2]: 0.044752	
+prob [0]: 0.281201	prob [1]: 0.166847	prob [2]: 0.551952	
+prob [0]: 0.906591	prob [1]: 0.001634	prob [2]: 0.091775	
+
+loss before back = 0.246651
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.542421	-0.649742	
+token 1:	0.304220	-0.432490	
+token 2:	1.804972	0.409192	
+
+output embedding table:
+token 0:	1.273262	0.177741	
+token 1:	-2.392608	-0.189224	
+token 2:	0.028123	-1.139378	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001728	grad [1]: -0.046480	grad [2]: 0.044752	
+grad [0]: 0.281201	grad [1]: 0.166847	grad [2]: -0.448048	
+grad [0]: -0.093409	grad [1]: 0.001634	grad [2]: 0.091775	
+embedding grads:
+
+grad [0]: 0.114408	grad [1]: -0.041531	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.053272	grad [3]: 0.524147	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.120111	grad [5]: -0.120360	
+
+
+loss after back = 0.241900
+
+epoch 49 
+
+
+prob [0]: 0.001683	prob [1]: 0.954086	prob [2]: 0.044231	
+prob [0]: 0.277034	prob [1]: 0.164293	prob [2]: 0.558673	
+prob [0]: 0.908002	prob [1]: 0.001588	prob [2]: 0.090411	
+
+loss before back = 0.241900
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.546235	-0.648357	
+token 1:	0.305996	-0.449962	
+token 2:	1.808976	0.413204	
+
+output embedding table:
+token 0:	1.276071	0.183200	
+token 1:	-2.396746	-0.187774	
+token 2:	0.029453	-1.146286	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001683	grad [1]: -0.045914	grad [2]: 0.044231	
+grad [0]: 0.277034	grad [1]: 0.164293	grad [2]: -0.441327	
+grad [0]: -0.091998	grad [1]: 0.001588	grad [2]: 0.090411	
+embedding grads:
+
+grad [0]: 0.113240	grad [1]: -0.041409	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.052763	grad [3]: 0.520990	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.118394	grad [5]: -0.119664	
+
+
+loss after back = 0.237172
+
+epoch 50 
+
+
+prob [0]: 0.001639	prob [1]: 0.954636	prob [2]: 0.043725	
+prob [0]: 0.272807	prob [1]: 0.161734	prob [2]: 0.565460	
+prob [0]: 0.909395	prob [1]: 0.001543	prob [2]: 0.089062	
+
+loss before back = 0.237172
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.550009	-0.646977	
+token 1:	0.307755	-0.467328	
+token 2:	1.812922	0.417192	
+
+output embedding table:
+token 0:	1.278832	0.188745	
+token 1:	-2.400842	-0.186254	
+token 2:	0.030787	-1.153351	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001639	grad [1]: -0.045364	grad [2]: 0.043725	
+grad [0]: 0.272807	grad [1]: 0.161734	grad [2]: -0.434540	
+grad [0]: -0.090605	grad [1]: 0.001543	grad [2]: 0.089062	
+embedding grads:
+
+grad [0]: 0.112105	grad [1]: -0.041302	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.052312	grad [3]: 0.517716	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.116693	grad [5]: -0.118979	
+
+
+loss after back = 0.232469
+
+epoch 51 
+
+
+prob [0]: 0.001597	prob [1]: 0.955170	prob [2]: 0.043232	
+prob [0]: 0.268524	prob [1]: 0.159169	prob [2]: 0.572307	
+prob [0]: 0.910773	prob [1]: 0.001500	prob [2]: 0.087728	
+
+loss before back = 0.232469
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.553746	-0.645600	
+token 1:	0.309498	-0.484585	
+token 2:	1.816812	0.421158	
+
+output embedding table:
+token 0:	1.281548	0.194369	
+token 1:	-2.404897	-0.184669	
+token 2:	0.032126	-1.160561	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001597	grad [1]: -0.044830	grad [2]: 0.043232	
+grad [0]: 0.268524	grad [1]: 0.159169	grad [2]: -0.427693	
+grad [0]: -0.089227	grad [1]: 0.001500	grad [2]: 0.087728	
+embedding grads:
+
+grad [0]: 0.111003	grad [1]: -0.041211	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.051911	grad [3]: 0.514317	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.115006	grad [5]: -0.118301	
+
+
+loss after back = 0.227795
+
+epoch 52 
+
+
+prob [0]: 0.001557	prob [1]: 0.955689	prob [2]: 0.042754	
+prob [0]: 0.264191	prob [1]: 0.156600	prob [2]: 0.579209	
+prob [0]: 0.912133	prob [1]: 0.001458	prob [2]: 0.086409	
+
+loss before back = 0.227795
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.557446	-0.644226	
+token 1:	0.311229	-0.501729	
+token 2:	1.820645	0.425102	
+
+output embedding table:
+token 0:	1.284221	0.200066	
+token 1:	-2.408911	-0.183022	
+token 2:	0.033467	-1.167905	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001557	grad [1]: -0.044311	grad [2]: 0.042754	
+grad [0]: 0.264191	grad [1]: 0.156600	grad [2]: -0.420791	
+grad [0]: -0.087867	grad [1]: 0.001458	grad [2]: 0.086409	
+embedding grads:
+
+grad [0]: 0.109931	grad [1]: -0.041133	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.051553	grad [3]: 0.510785	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.113336	grad [5]: -0.117630	
+
+
+loss after back = 0.223151
+
+epoch 53 
+
+
+prob [0]: 0.001518	prob [1]: 0.956195	prob [2]: 0.042288	
+prob [0]: 0.259813	prob [1]: 0.154027	prob [2]: 0.586160	
+prob [0]: 0.913478	prob [1]: 0.001418	prob [2]: 0.085104	
+
+loss before back = 0.223151
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.561111	-0.642855	
+token 1:	0.312947	-0.518755	
+token 2:	1.824423	0.429023	
+
+output embedding table:
+token 0:	1.286851	0.205829	
+token 1:	-2.412883	-0.181318	
+token 2:	0.034809	-1.175372	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001518	grad [1]: -0.043805	grad [2]: 0.042288	
+grad [0]: 0.259813	grad [1]: 0.154027	grad [2]: -0.413840	
+grad [0]: -0.086522	grad [1]: 0.001418	grad [2]: 0.085104	
+embedding grads:
+
+grad [0]: 0.108887	grad [1]: -0.041067	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.051231	grad [3]: 0.507114	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.111681	grad [5]: -0.116963	
+
+
+loss after back = 0.218540
+
+epoch 54 
+
+
+prob [0]: 0.001480	prob [1]: 0.956687	prob [2]: 0.041833	
+prob [0]: 0.255394	prob [1]: 0.151450	prob [2]: 0.593156	
+prob [0]: 0.914806	prob [1]: 0.001379	prob [2]: 0.083814	
+
+loss before back = 0.218540
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.564740	-0.641486	
+token 1:	0.314655	-0.535659	
+token 2:	1.828146	0.432921	
+
+output embedding table:
+token 0:	1.289441	0.211650	
+token 1:	-2.416815	-0.179560	
+token 2:	0.036151	-1.182951	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001480	grad [1]: -0.043313	grad [2]: 0.041833	
+grad [0]: 0.255394	grad [1]: 0.151450	grad [2]: -0.406844	
+grad [0]: -0.085194	grad [1]: 0.001379	grad [2]: 0.083814	
+embedding grads:
+
+grad [0]: 0.107870	grad [1]: -0.041012	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.050939	grad [3]: 0.503299	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.110043	grad [5]: -0.116299	
+
+
+loss after back = 0.213966
+
+epoch 55 
+
+
+prob [0]: 0.001443	prob [1]: 0.957167	prob [2]: 0.041390	
+prob [0]: 0.250940	prob [1]: 0.148870	prob [2]: 0.600189	
+prob [0]: 0.916118	prob [1]: 0.001342	prob [2]: 0.082539	
+
+loss before back = 0.213966
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.568336	-0.640119	
+token 1:	0.316353	-0.552436	
+token 2:	1.831814	0.436798	
+
+output embedding table:
+token 0:	1.291992	0.217523	
+token 1:	-2.420706	-0.177752	
+token 2:	0.037491	-1.190632	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001443	grad [1]: -0.042833	grad [2]: 0.041390	
+grad [0]: 0.250940	grad [1]: 0.148870	grad [2]: -0.399811	
+grad [0]: -0.083882	grad [1]: 0.001342	grad [2]: 0.082539	
+embedding grads:
+
+grad [0]: 0.106877	grad [1]: -0.040966	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.050673	grad [3]: 0.499337	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.108420	grad [5]: -0.115635	
+
+
+loss after back = 0.209432
+
+epoch 56 
+
+
+prob [0]: 0.001407	prob [1]: 0.957634	prob [2]: 0.040958	
+prob [0]: 0.246458	prob [1]: 0.146289	prob [2]: 0.607253	
+prob [0]: 0.917415	prob [1]: 0.001306	prob [2]: 0.081279	
+
+loss before back = 0.209432
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.571898	-0.638754	
+token 1:	0.318042	-0.569080	
+token 2:	1.835428	0.440653	
+
+output embedding table:
+token 0:	1.294506	0.223441	
+token 1:	-2.424556	-0.175898	
+token 2:	0.038828	-1.198404	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001407	grad [1]: -0.042366	grad [2]: 0.040958	
+grad [0]: 0.246458	grad [1]: 0.146289	grad [2]: -0.392747	
+grad [0]: -0.082585	grad [1]: 0.001306	grad [2]: 0.081279	
+embedding grads:
+
+grad [0]: 0.105909	grad [1]: -0.040929	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.050425	grad [3]: 0.495225	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.106815	grad [5]: -0.114970	
+
+
+loss after back = 0.204941
+
+epoch 57 
+
+
+prob [0]: 0.001373	prob [1]: 0.958091	prob [2]: 0.040536	
+prob [0]: 0.241953	prob [1]: 0.143708	prob [2]: 0.614339	
+prob [0]: 0.918695	prob [1]: 0.001272	prob [2]: 0.080034	
+
+loss before back = 0.204941
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.575429	-0.637390	
+token 1:	0.319723	-0.585588	
+token 2:	1.838989	0.444485	
+
+output embedding table:
+token 0:	1.296983	0.229398	
+token 1:	-2.428367	-0.174002	
+token 2:	0.040160	-1.206256	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001373	grad [1]: -0.041909	grad [2]: 0.040536	
+grad [0]: 0.241953	grad [1]: 0.143708	grad [2]: -0.385661	
+grad [0]: -0.081305	grad [1]: 0.001272	grad [2]: 0.080034	
+embedding grads:
+
+grad [0]: 0.104962	grad [1]: -0.040900	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.050193	grad [3]: 0.490962	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.105226	grad [5]: -0.114303	
+
+
+loss after back = 0.200496
+
+epoch 58 
+
+
+prob [0]: 0.001340	prob [1]: 0.958537	prob [2]: 0.040123	
+prob [0]: 0.237431	prob [1]: 0.141128	prob [2]: 0.621441	
+prob [0]: 0.919959	prob [1]: 0.001238	prob [2]: 0.078803	
+
+loss before back = 0.200496
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.578928	-0.636026	
+token 1:	0.321396	-0.601953	
+token 2:	1.842496	0.448295	
+
+output embedding table:
+token 0:	1.299426	0.235386	
+token 1:	-2.432137	-0.172068	
+token 2:	0.041488	-1.214179	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001340	grad [1]: -0.041463	grad [2]: 0.040123	
+grad [0]: 0.237431	grad [1]: 0.141128	grad [2]: -0.378559	
+grad [0]: -0.080041	grad [1]: 0.001238	grad [2]: 0.078803	
+embedding grads:
+
+grad [0]: 0.104036	grad [1]: -0.040877	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.049970	grad [3]: 0.486548	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.103655	grad [5]: -0.113633	
+
+
+loss after back = 0.196100
+
+epoch 59 
+
+
+prob [0]: 0.001308	prob [1]: 0.958973	prob [2]: 0.039719	
+prob [0]: 0.232897	prob [1]: 0.138552	prob [2]: 0.628551	
+prob [0]: 0.921207	prob [1]: 0.001206	prob [2]: 0.077587	
+
+loss before back = 0.196100
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.582395	-0.634664	
+token 1:	0.323062	-0.618171	
+token 2:	1.845951	0.452083	
+
+output embedding table:
+token 0:	1.301835	0.241400	
+token 1:	-2.435867	-0.170099	
+token 2:	0.042809	-1.222162	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001308	grad [1]: -0.041027	grad [2]: 0.039719	
+grad [0]: 0.232897	grad [1]: 0.138552	grad [2]: -0.371449	
+grad [0]: -0.078793	grad [1]: 0.001206	grad [2]: 0.077587	
+embedding grads:
+
+grad [0]: 0.103130	grad [1]: -0.040859	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.049754	grad [3]: 0.481986	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.102101	grad [5]: -0.112959	
+
+
+loss after back = 0.191758
+
+epoch 60 
+
+
+prob [0]: 0.001276	prob [1]: 0.959400	prob [2]: 0.039324	
+prob [0]: 0.228359	prob [1]: 0.135980	prob [2]: 0.635660	
+prob [0]: 0.922439	prob [1]: 0.001175	prob [2]: 0.076386	
+
+loss before back = 0.191758
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.585833	-0.633302	
+token 1:	0.324720	-0.634238	
+token 2:	1.849355	0.455848	
+
+output embedding table:
+token 0:	1.304212	0.247433	
+token 1:	-2.439558	-0.168099	
+token 2:	0.044122	-1.230195	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001276	grad [1]: -0.040600	grad [2]: 0.039324	
+grad [0]: 0.228359	grad [1]: 0.135980	grad [2]: -0.364340	
+grad [0]: -0.077561	grad [1]: 0.001175	grad [2]: 0.076386	
+embedding grads:
+
+grad [0]: 0.102242	grad [1]: -0.040846	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.049541	grad [3]: 0.477278	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.100565	grad [5]: -0.112279	
+
+
+loss after back = 0.187471
+
+epoch 61 
+
+
+prob [0]: 0.001246	prob [1]: 0.959817	prob [2]: 0.038937	
+prob [0]: 0.223823	prob [1]: 0.133417	prob [2]: 0.642761	
+prob [0]: 0.923654	prob [1]: 0.001145	prob [2]: 0.075200	
+
+loss before back = 0.187471
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.589241	-0.631940	
+token 1:	0.326371	-0.650147	
+token 2:	1.852707	0.459591	
+
+output embedding table:
+token 0:	1.306558	0.253480	
+token 1:	-2.443209	-0.166072	
+token 2:	0.045427	-1.238269	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001246	grad [1]: -0.040183	grad [2]: 0.038937	
+grad [0]: 0.223823	grad [1]: 0.133417	grad [2]: -0.357239	
+grad [0]: -0.076346	grad [1]: 0.001145	grad [2]: 0.075200	
+embedding grads:
+
+grad [0]: 0.101371	grad [1]: -0.040836	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.049328	grad [3]: 0.472428	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.099047	grad [5]: -0.111594	
+
+
+loss after back = 0.183243
+
+epoch 62 
+
+
+prob [0]: 0.001217	prob [1]: 0.960227	prob [2]: 0.038557	
+prob [0]: 0.219293	prob [1]: 0.130862	prob [2]: 0.649845	
+prob [0]: 0.924854	prob [1]: 0.001116	prob [2]: 0.074030	
+
+loss before back = 0.183243
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.592620	-0.630579	
+token 1:	0.328016	-0.665894	
+token 2:	1.856008	0.463311	
+
+output embedding table:
+token 0:	1.308874	0.259533	
+token 1:	-2.446820	-0.164021	
+token 2:	0.046723	-1.246374	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001217	grad [1]: -0.039773	grad [2]: 0.038557	
+grad [0]: 0.219293	grad [1]: 0.130862	grad [2]: -0.350155	
+grad [0]: -0.075146	grad [1]: 0.001116	grad [2]: 0.074030	
+embedding grads:
+
+grad [0]: 0.100516	grad [1]: -0.040830	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.049111	grad [3]: 0.467440	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.097547	grad [5]: -0.110902	
+
+
+loss after back = 0.179076
+
+epoch 63 
+
+
+prob [0]: 0.001189	prob [1]: 0.960628	prob [2]: 0.038184	
+prob [0]: 0.214777	prob [1]: 0.128320	prob [2]: 0.656903	
+prob [0]: 0.926037	prob [1]: 0.001088	prob [2]: 0.072875	
+
+loss before back = 0.179076
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.595971	-0.629218	
+token 1:	0.329653	-0.681476	
+token 2:	1.859260	0.467007	
+
+output embedding table:
+token 0:	1.311161	0.265589	
+token 1:	-2.450392	-0.161948	
+token 2:	0.048008	-1.254501	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001189	grad [1]: -0.039372	grad [2]: 0.038184	
+grad [0]: 0.214777	grad [1]: 0.128320	grad [2]: -0.343097	
+grad [0]: -0.073963	grad [1]: 0.001088	grad [2]: 0.072875	
+embedding grads:
+
+grad [0]: 0.099677	grad [1]: -0.040825	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.048890	grad [3]: 0.462322	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.096067	grad [5]: -0.110204	
+
+
+loss after back = 0.174974
+
+epoch 64 
+
+
+prob [0]: 0.001161	prob [1]: 0.961021	prob [2]: 0.037818	
+prob [0]: 0.210281	prob [1]: 0.125791	prob [2]: 0.663928	
+prob [0]: 0.927203	prob [1]: 0.001061	prob [2]: 0.071735	
+
+loss before back = 0.174974
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.599293	-0.627857	
+token 1:	0.331282	-0.696887	
+token 2:	1.862462	0.470681	
+
+output embedding table:
+token 0:	1.313420	0.271640	
+token 1:	-2.453925	-0.159859	
+token 2:	0.049282	-1.262642	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001161	grad [1]: -0.038979	grad [2]: 0.037818	
+grad [0]: 0.210281	grad [1]: 0.125791	grad [2]: -0.336072	
+grad [0]: -0.072797	grad [1]: 0.001061	grad [2]: 0.071735	
+embedding grads:
+
+grad [0]: 0.098851	grad [1]: -0.040821	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.048660	grad [3]: 0.457079	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.094605	grad [5]: -0.109498	
+
+
+loss after back = 0.170939
+
+epoch 65 
+
+
+prob [0]: 0.001134	prob [1]: 0.961407	prob [2]: 0.037458	
+prob [0]: 0.205809	prob [1]: 0.123279	prob [2]: 0.670912	
+prob [0]: 0.928354	prob [1]: 0.001035	prob [2]: 0.070611	
+
+loss before back = 0.170939
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.602588	-0.626496	
+token 1:	0.332904	-0.712122	
+token 2:	1.865615	0.474331	
+
+output embedding table:
+token 0:	1.315653	0.277682	
+token 1:	-2.457419	-0.157755	
+token 2:	0.050543	-1.270788	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001134	grad [1]: -0.038593	grad [2]: 0.037458	
+grad [0]: 0.205809	grad [1]: 0.123279	grad [2]: -0.329088	
+grad [0]: -0.071646	grad [1]: 0.001035	grad [2]: 0.070611	
+embedding grads:
+
+grad [0]: 0.098039	grad [1]: -0.040819	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.048422	grad [3]: 0.451719	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.093163	grad [5]: -0.108784	
+
+
+loss after back = 0.166973
+
+epoch 66 
+
+
+prob [0]: 0.001109	prob [1]: 0.961787	prob [2]: 0.037104	
+prob [0]: 0.201368	prob [1]: 0.120786	prob [2]: 0.677846	
+prob [0]: 0.929487	prob [1]: 0.001010	prob [2]: 0.069503	
+
+loss before back = 0.166973
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.605856	-0.625136	
+token 1:	0.334518	-0.727180	
+token 2:	1.868721	0.477957	
+
+output embedding table:
+token 0:	1.317859	0.283709	
+token 1:	-2.460874	-0.155639	
+token 2:	0.051792	-1.278931	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001109	grad [1]: -0.038213	grad [2]: 0.037104	
+grad [0]: 0.201368	grad [1]: 0.120786	grad [2]: -0.322154	
+grad [0]: -0.070513	grad [1]: 0.001010	grad [2]: 0.069503	
+embedding grads:
+
+grad [0]: 0.097239	grad [1]: -0.040816	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.048173	grad [3]: 0.446251	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.091740	grad [5]: -0.108063	
+
+
+loss after back = 0.163079
+
+epoch 67 
+
+
+prob [0]: 0.001084	prob [1]: 0.962160	prob [2]: 0.036756	
+prob [0]: 0.196963	prob [1]: 0.118313	prob [2]: 0.684724	
+prob [0]: 0.930604	prob [1]: 0.000986	prob [2]: 0.068410	
+
+loss before back = 0.163079
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.609098	-0.623775	
+token 1:	0.336124	-0.742055	
+token 2:	1.871779	0.481559	
+
+output embedding table:
+token 0:	1.320040	0.289718	
+token 1:	-2.464291	-0.153515	
+token 2:	0.053028	-1.287063	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001084	grad [1]: -0.037840	grad [2]: 0.036756	
+grad [0]: 0.196963	grad [1]: 0.118313	grad [2]: -0.315276	
+grad [0]: -0.069396	grad [1]: 0.000986	grad [2]: 0.068410	
+embedding grads:
+
+grad [0]: 0.096451	grad [1]: -0.040812	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.047912	grad [3]: 0.440683	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.090337	grad [5]: -0.107334	
+
+
+loss after back = 0.159257
+
+epoch 68 
+
+
+prob [0]: 0.001059	prob [1]: 0.962527	prob [2]: 0.036414	
+prob [0]: 0.192600	prob [1]: 0.115863	prob [2]: 0.691537	
+prob [0]: 0.931704	prob [1]: 0.000962	prob [2]: 0.067334	
+
+loss before back = 0.159257
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.612313	-0.622415	
+token 1:	0.337721	-0.756744	
+token 2:	1.874790	0.485137	
+
+output embedding table:
+token 0:	1.322197	0.295702	
+token 1:	-2.467669	-0.151386	
+token 2:	0.054249	-1.295177	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001059	grad [1]: -0.037473	grad [2]: 0.036414	
+grad [0]: 0.192600	grad [1]: 0.115863	grad [2]: -0.308463	
+grad [0]: -0.068296	grad [1]: 0.000962	grad [2]: 0.067334	
+embedding grads:
+
+grad [0]: 0.095674	grad [1]: -0.040807	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.047639	grad [3]: 0.435024	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.088954	grad [5]: -0.106597	
+
+
+loss after back = 0.155511
+
+epoch 69 
+
+
+prob [0]: 0.001036	prob [1]: 0.962888	prob [2]: 0.036076	
+prob [0]: 0.188282	prob [1]: 0.113439	prob [2]: 0.698279	
+prob [0]: 0.932787	prob [1]: 0.000940	prob [2]: 0.066273	
+
+loss before back = 0.155511
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.615502	-0.621055	
+token 1:	0.339309	-0.771245	
+token 2:	1.877755	0.488690	
+
+output embedding table:
+token 0:	1.324330	0.301659	
+token 1:	-2.471009	-0.149253	
+token 2:	0.055457	-1.303267	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001036	grad [1]: -0.037112	grad [2]: 0.036076	
+grad [0]: 0.188282	grad [1]: 0.113439	grad [2]: -0.301721	
+grad [0]: -0.067213	grad [1]: 0.000940	grad [2]: 0.066273	
+embedding grads:
+
+grad [0]: 0.094907	grad [1]: -0.040800	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.047352	grad [3]: 0.429285	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.087592	grad [5]: -0.105852	
+
+
+loss after back = 0.151841
+
+epoch 70 
+
+
+prob [0]: 0.001013	prob [1]: 0.963243	prob [2]: 0.035743	
+prob [0]: 0.184015	prob [1]: 0.111042	prob [2]: 0.704943	
+prob [0]: 0.933854	prob [1]: 0.000918	prob [2]: 0.065228	
+
+loss before back = 0.151841
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.618665	-0.619695	
+token 1:	0.340888	-0.785555	
+token 2:	1.880675	0.492218	
+
+output embedding table:
+token 0:	1.326441	0.307584	
+token 1:	-2.474312	-0.147120	
+token 2:	0.056649	-1.311325	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.001013	grad [1]: -0.036757	grad [2]: 0.035743	
+grad [0]: 0.184015	grad [1]: 0.111042	grad [2]: -0.295057	
+grad [0]: -0.066146	grad [1]: 0.000918	grad [2]: 0.065228	
+embedding grads:
+
+grad [0]: 0.094150	grad [1]: -0.040792	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.047052	grad [3]: 0.423474	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.086249	grad [5]: -0.105100	
+
+
+loss after back = 0.148248
+
+epoch 71 
+
+
+prob [0]: 0.000991	prob [1]: 0.963594	prob [2]: 0.035415	
+prob [0]: 0.179803	prob [1]: 0.108674	prob [2]: 0.711523	
+prob [0]: 0.934904	prob [1]: 0.000896	prob [2]: 0.064200	
+
+loss before back = 0.148248
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.621804	-0.618335	
+token 1:	0.342456	-0.799670	
+token 2:	1.883550	0.495722	
+
+output embedding table:
+token 0:	1.328529	0.313473	
+token 1:	-2.477577	-0.144988	
+token 2:	0.057825	-1.319345	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000991	grad [1]: -0.036406	grad [2]: 0.035415	
+grad [0]: 0.179803	grad [1]: 0.108674	grad [2]: -0.288477	
+grad [0]: -0.065096	grad [1]: 0.000896	grad [2]: 0.064200	
+embedding grads:
+
+grad [0]: 0.093401	grad [1]: -0.040780	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.046738	grad [3]: 0.417603	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.084927	grad [5]: -0.104341	
+
+
+loss after back = 0.144734
+
+epoch 72 
+
+
+prob [0]: 0.000970	prob [1]: 0.963939	prob [2]: 0.035092	
+prob [0]: 0.175649	prob [1]: 0.106338	prob [2]: 0.718013	
+prob [0]: 0.935937	prob [1]: 0.000876	prob [2]: 0.063188	
+
+loss before back = 0.144734
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.624917	-0.616976	
+token 1:	0.344014	-0.813590	
+token 2:	1.886381	0.499200	
+
+output embedding table:
+token 0:	1.330595	0.319322	
+token 1:	-2.480805	-0.142861	
+token 2:	0.058987	-1.327322	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000970	grad [1]: -0.036061	grad [2]: 0.035092	
+grad [0]: 0.175649	grad [1]: 0.106338	grad [2]: -0.281987	
+grad [0]: -0.064063	grad [1]: 0.000876	grad [2]: 0.063188	
+embedding grads:
+
+grad [0]: 0.092662	grad [1]: -0.040766	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.046411	grad [3]: 0.411682	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.083626	grad [5]: -0.103575	
+
+
+loss after back = 0.141300
+
+epoch 73 
+
+
+prob [0]: 0.000949	prob [1]: 0.964279	prob [2]: 0.034772	
+prob [0]: 0.171558	prob [1]: 0.104034	prob [2]: 0.724407	
+prob [0]: 0.936953	prob [1]: 0.000856	prob [2]: 0.062192	
+
+loss before back = 0.141300
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.628006	-0.615617	
+token 1:	0.345561	-0.827313	
+token 2:	1.889168	0.502652	
+
+output embedding table:
+token 0:	1.332641	0.325129	
+token 1:	-2.483995	-0.140739	
+token 2:	0.060132	-1.335251	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000949	grad [1]: -0.035721	grad [2]: 0.034772	
+grad [0]: 0.171558	grad [1]: 0.104034	grad [2]: -0.275593	
+grad [0]: -0.063047	grad [1]: 0.000856	grad [2]: 0.062192	
+embedding grads:
+
+grad [0]: 0.091930	grad [1]: -0.040748	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.046070	grad [3]: 0.405720	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.082346	grad [5]: -0.102803	
+
+
+loss after back = 0.137944
+
+epoch 74 
+
+
+prob [0]: 0.000929	prob [1]: 0.964615	prob [2]: 0.034457	
+prob [0]: 0.167533	prob [1]: 0.101765	prob [2]: 0.730702	
+prob [0]: 0.937952	prob [1]: 0.000837	prob [2]: 0.061212	
+
+loss before back = 0.137944
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.631070	-0.614258	
+token 1:	0.347097	-0.840837	
+token 2:	1.891913	0.506079	
+
+output embedding table:
+token 0:	1.334666	0.330890	
+token 1:	-2.487149	-0.138625	
+token 2:	0.061261	-1.343126	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000929	grad [1]: -0.035385	grad [2]: 0.034457	
+grad [0]: 0.167533	grad [1]: 0.101765	grad [2]: -0.269298	
+grad [0]: -0.062048	grad [1]: 0.000837	grad [2]: 0.061212	
+embedding grads:
+
+grad [0]: 0.091206	grad [1]: -0.040727	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.045717	grad [3]: 0.399728	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.081086	grad [5]: -0.102025	
+
+
+loss after back = 0.134669
+
+epoch 75 
+
+
+prob [0]: 0.000909	prob [1]: 0.964946	prob [2]: 0.034145	
+prob [0]: 0.163576	prob [1]: 0.099532	prob [2]: 0.736892	
+prob [0]: 0.938934	prob [1]: 0.000818	prob [2]: 0.060248	
+
+loss before back = 0.134669
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.634110	-0.612901	
+token 1:	0.348621	-0.854161	
+token 2:	1.894616	0.509480	
+
+output embedding table:
+token 0:	1.336671	0.336603	
+token 1:	-2.490267	-0.136522	
+token 2:	0.062373	-1.350942	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000909	grad [1]: -0.035054	grad [2]: 0.034145	
+grad [0]: 0.163576	grad [1]: 0.099532	grad [2]: -0.263108	
+grad [0]: -0.061066	grad [1]: 0.000818	grad [2]: 0.060248	
+embedding grads:
+
+grad [0]: 0.090490	grad [1]: -0.040701	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.045350	grad [3]: 0.393715	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.079847	grad [5]: -0.101241	
+
+
+loss after back = 0.131474
+
+epoch 76 
+
+
+prob [0]: 0.000890	prob [1]: 0.965273	prob [2]: 0.033837	
+prob [0]: 0.159690	prob [1]: 0.097336	prob [2]: 0.742974	
+prob [0]: 0.939899	prob [1]: 0.000800	prob [2]: 0.059301	
+
+loss before back = 0.131474
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.637127	-0.611544	
+token 1:	0.350132	-0.867285	
+token 2:	1.897278	0.512855	
+
+output embedding table:
+token 0:	1.338657	0.342265	
+token 1:	-2.493349	-0.134429	
+token 2:	0.063469	-1.358697	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000890	grad [1]: -0.034727	grad [2]: 0.033837	
+grad [0]: 0.159690	grad [1]: 0.097336	grad [2]: -0.257026	
+grad [0]: -0.060101	grad [1]: 0.000800	grad [2]: 0.059301	
+embedding grads:
+
+grad [0]: 0.089781	grad [1]: -0.040672	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.044971	grad [3]: 0.387691	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.078629	grad [5]: -0.100452	
+
+
+loss after back = 0.128358
+
+epoch 77 
+
+
+prob [0]: 0.000871	prob [1]: 0.965595	prob [2]: 0.033533	
+prob [0]: 0.155877	prob [1]: 0.095178	prob [2]: 0.748944	
+prob [0]: 0.940847	prob [1]: 0.000783	prob [2]: 0.058370	
+
+loss before back = 0.128358
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.640119	-0.610188	
+token 1:	0.351631	-0.880208	
+token 2:	1.899899	0.516203	
+
+output embedding table:
+token 0:	1.340624	0.347874	
+token 1:	-2.496395	-0.132350	
+token 2:	0.064548	-1.366385	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000871	grad [1]: -0.034405	grad [2]: 0.033533	
+grad [0]: 0.155877	grad [1]: 0.095178	grad [2]: -0.251056	
+grad [0]: -0.059153	grad [1]: 0.000783	grad [2]: 0.058370	
+embedding grads:
+
+grad [0]: 0.089078	grad [1]: -0.040638	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.044581	grad [3]: 0.381665	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.077432	grad [5]: -0.099658	
+
+
+loss after back = 0.125322
+
+epoch 78 
+
+
+prob [0]: 0.000853	prob [1]: 0.965914	prob [2]: 0.033232	
+prob [0]: 0.152140	prob [1]: 0.093060	prob [2]: 0.754800	
+prob [0]: 0.941779	prob [1]: 0.000766	prob [2]: 0.057455	
+
+loss before back = 0.125322
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.643089	-0.608834	
+token 1:	0.353117	-0.892930	
+token 2:	1.902480	0.519525	
+
+output embedding table:
+token 0:	1.342572	0.353428	
+token 1:	-2.499406	-0.130285	
+token 2:	0.065611	-1.374004	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000853	grad [1]: -0.034086	grad [2]: 0.033232	
+grad [0]: 0.152140	grad [1]: 0.093060	grad [2]: -0.245200	
+grad [0]: -0.058221	grad [1]: 0.000766	grad [2]: 0.057455	
+embedding grads:
+
+grad [0]: 0.088381	grad [1]: -0.040600	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.044181	grad [3]: 0.375647	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.076255	grad [5]: -0.098861	
+
+
+loss after back = 0.122365
+
+epoch 79 
+
+
+prob [0]: 0.000836	prob [1]: 0.966229	prob [2]: 0.032935	
+prob [0]: 0.148479	prob [1]: 0.090983	prob [2]: 0.760538	
+prob [0]: 0.942694	prob [1]: 0.000749	prob [2]: 0.056556	
+
+loss before back = 0.122365
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.646035	-0.607481	
+token 1:	0.354590	-0.905452	
+token 2:	1.905021	0.522820	
+
+output embedding table:
+token 0:	1.344502	0.358925	
+token 1:	-2.502382	-0.128236	
+token 2:	0.066657	-1.381550	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000836	grad [1]: -0.033771	grad [2]: 0.032935	
+grad [0]: 0.148479	grad [1]: 0.090983	grad [2]: -0.239462	
+grad [0]: -0.057306	grad [1]: 0.000749	grad [2]: 0.056556	
+embedding grads:
+
+grad [0]: 0.087690	grad [1]: -0.040557	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.043770	grad [3]: 0.369644	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.075099	grad [5]: -0.098060	
+
+
+loss after back = 0.119487
+
+epoch 80 
+
+
+prob [0]: 0.000819	prob [1]: 0.966540	prob [2]: 0.032641	
+prob [0]: 0.144897	prob [1]: 0.088946	prob [2]: 0.766158	
+prob [0]: 0.943593	prob [1]: 0.000733	prob [2]: 0.055674	
+
+loss before back = 0.119487
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.648958	-0.606129	
+token 1:	0.356049	-0.917773	
+token 2:	1.907525	0.526089	
+
+output embedding table:
+token 0:	1.346414	0.364364	
+token 1:	-2.505323	-0.126204	
+token 2:	0.067687	-1.389021	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000819	grad [1]: -0.033460	grad [2]: 0.032641	
+grad [0]: 0.144897	grad [1]: 0.088946	grad [2]: -0.233842	
+grad [0]: -0.056407	grad [1]: 0.000733	grad [2]: 0.055674	
+embedding grads:
+
+grad [0]: 0.087006	grad [1]: -0.040510	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.043350	grad [3]: 0.363666	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.073964	grad [5]: -0.097256	
+
+
+loss after back = 0.116686
+
+epoch 81 
+
+
+prob [0]: 0.000803	prob [1]: 0.966848	prob [2]: 0.032349	
+prob [0]: 0.141393	prob [1]: 0.086951	prob [2]: 0.771656	
+prob [0]: 0.944475	prob [1]: 0.000718	prob [2]: 0.054807	
+
+loss before back = 0.116686
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.651858	-0.604778	
+token 1:	0.357494	-0.929896	
+token 2:	1.909990	0.529331	
+
+output embedding table:
+token 0:	1.348308	0.369742	
+token 1:	-2.508230	-0.124190	
+token 2:	0.068699	-1.396414	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000803	grad [1]: -0.033152	grad [2]: 0.032349	
+grad [0]: 0.141393	grad [1]: 0.086951	grad [2]: -0.228344	
+grad [0]: -0.055525	grad [1]: 0.000718	grad [2]: 0.054807	
+embedding grads:
+
+grad [0]: 0.086327	grad [1]: -0.040457	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.042922	grad [3]: 0.357719	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.072849	grad [5]: -0.096450	
+
+
+loss after back = 0.113961
+
+epoch 82 
+
+
+prob [0]: 0.000787	prob [1]: 0.967152	prob [2]: 0.032061	
+prob [0]: 0.137969	prob [1]: 0.084998	prob [2]: 0.777033	
+prob [0]: 0.945341	prob [1]: 0.000703	prob [2]: 0.053956	
+
+loss before back = 0.113961
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.654735	-0.603430	
+token 1:	0.358925	-0.941820	
+token 2:	1.912418	0.532546	
+
+output embedding table:
+token 0:	1.350185	0.375060	
+token 1:	-2.511104	-0.122194	
+token 2:	0.069696	-1.403726	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000787	grad [1]: -0.032848	grad [2]: 0.032061	
+grad [0]: 0.137969	grad [1]: 0.084998	grad [2]: -0.222967	
+grad [0]: -0.054659	grad [1]: 0.000703	grad [2]: 0.053956	
+embedding grads:
+
+grad [0]: 0.085654	grad [1]: -0.040400	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.042486	grad [3]: 0.351811	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.071754	grad [5]: -0.095642	
+
+
+loss after back = 0.111311
+
+epoch 83 
+
+
+prob [0]: 0.000771	prob [1]: 0.967453	prob [2]: 0.031776	
+prob [0]: 0.134626	prob [1]: 0.083087	prob [2]: 0.782287	
+prob [0]: 0.946190	prob [1]: 0.000689	prob [2]: 0.053121	
+
+loss before back = 0.111311
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.657591	-0.602083	
+token 1:	0.360341	-0.953547	
+token 2:	1.914810	0.535734	
+
+output embedding table:
+token 0:	1.352045	0.380315	
+token 1:	-2.513944	-0.120219	
+token 2:	0.070676	-1.410957	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000771	grad [1]: -0.032547	grad [2]: 0.031776	
+grad [0]: 0.134626	grad [1]: 0.083087	grad [2]: -0.217713	
+grad [0]: -0.053810	grad [1]: 0.000689	grad [2]: 0.053121	
+embedding grads:
+
+grad [0]: 0.084985	grad [1]: -0.040338	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.042044	grad [3]: 0.345949	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.070680	grad [5]: -0.094834	
+
+
+loss after back = 0.108736
+
+epoch 84 
+
+
+prob [0]: 0.000756	prob [1]: 0.967750	prob [2]: 0.031494	
+prob [0]: 0.131362	prob [1]: 0.081219	prob [2]: 0.787419	
+prob [0]: 0.947024	prob [1]: 0.000675	prob [2]: 0.052302	
+
+loss before back = 0.108736
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.660423	-0.600738	
+token 1:	0.361742	-0.965078	
+token 2:	1.917166	0.538895	
+
+output embedding table:
+token 0:	1.353889	0.385508	
+token 1:	-2.516752	-0.118264	
+token 2:	0.071640	-1.418105	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000756	grad [1]: -0.032250	grad [2]: 0.031494	
+grad [0]: 0.131362	grad [1]: 0.081219	grad [2]: -0.212581	
+grad [0]: -0.052976	grad [1]: 0.000675	grad [2]: 0.052302	
+embedding grads:
+
+grad [0]: 0.084323	grad [1]: -0.040272	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.041596	grad [3]: 0.340138	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.069626	grad [5]: -0.094024	
+
+
+loss after back = 0.106233
+
+epoch 85 
+
+
+prob [0]: 0.000741	prob [1]: 0.968044	prob [2]: 0.031214	
+prob [0]: 0.128179	prob [1]: 0.079393	prob [2]: 0.792428	
+prob [0]: 0.947841	prob [1]: 0.000661	prob [2]: 0.051498	
+
+loss before back = 0.106233
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.663234	-0.599396	
+token 1:	0.363129	-0.976416	
+token 2:	1.919487	0.542029	
+
+output embedding table:
+token 0:	1.355716	0.390637	
+token 1:	-2.519527	-0.116330	
+token 2:	0.072588	-1.425167	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000741	grad [1]: -0.031956	grad [2]: 0.031214	
+grad [0]: 0.128179	grad [1]: 0.079393	grad [2]: -0.207572	
+grad [0]: -0.052159	grad [1]: 0.000661	grad [2]: 0.051498	
+embedding grads:
+
+grad [0]: 0.083665	grad [1]: -0.040200	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.041144	grad [3]: 0.334384	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.068591	grad [5]: -0.093215	
+
+
+loss after back = 0.103802
+
+epoch 86 
+
+
+prob [0]: 0.000727	prob [1]: 0.968335	prob [2]: 0.030938	
+prob [0]: 0.125076	prob [1]: 0.077610	prob [2]: 0.797314	
+prob [0]: 0.948643	prob [1]: 0.000648	prob [2]: 0.050709	
+
+loss before back = 0.103802
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.666023	-0.598056	
+token 1:	0.364500	-0.987562	
+token 2:	1.921774	0.545136	
+
+output embedding table:
+token 0:	1.357526	0.395702	
+token 1:	-2.522270	-0.114419	
+token 2:	0.073521	-1.432144	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000727	grad [1]: -0.031665	grad [2]: 0.030938	
+grad [0]: 0.125076	grad [1]: 0.077610	grad [2]: -0.202686	
+grad [0]: -0.051357	grad [1]: 0.000648	grad [2]: 0.050709	
+embedding grads:
+
+grad [0]: 0.083012	grad [1]: -0.040124	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.040687	grad [3]: 0.328693	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.067577	grad [5]: -0.092406	
+
+
+loss after back = 0.101441
+
+epoch 87 
+
+
+prob [0]: 0.000713	prob [1]: 0.968623	prob [2]: 0.030664	
+prob [0]: 0.122052	prob [1]: 0.075870	prob [2]: 0.802078	
+prob [0]: 0.949430	prob [1]: 0.000635	prob [2]: 0.049935	
+
+loss before back = 0.101441
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.668790	-0.596718	
+token 1:	0.365857	-0.998519	
+token 2:	1.924026	0.548216	
+
+output embedding table:
+token 0:	1.359321	0.400703	
+token 1:	-2.524981	-0.112529	
+token 2:	0.074437	-1.439034	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000713	grad [1]: -0.031377	grad [2]: 0.030664	
+grad [0]: 0.122052	grad [1]: 0.075870	grad [2]: -0.197922	
+grad [0]: -0.050570	grad [1]: 0.000635	grad [2]: 0.049935	
+embedding grads:
+
+grad [0]: 0.082364	grad [1]: -0.040042	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.040227	grad [3]: 0.323068	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.066581	grad [5]: -0.091598	
+
+
+loss after back = 0.099149
+
+epoch 88 
+
+
+prob [0]: 0.000700	prob [1]: 0.968908	prob [2]: 0.030393	
+prob [0]: 0.119107	prob [1]: 0.074172	prob [2]: 0.806721	
+prob [0]: 0.950201	prob [1]: 0.000623	prob [2]: 0.049177	
+
+loss before back = 0.099149
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.671535	-0.595384	
+token 1:	0.367198	-1.009288	
+token 2:	1.926245	0.551270	
+
+output embedding table:
+token 0:	1.361099	0.405639	
+token 1:	-2.527661	-0.110662	
+token 2:	0.075339	-1.445837	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000700	grad [1]: -0.031092	grad [2]: 0.030393	
+grad [0]: 0.119107	grad [1]: 0.074172	grad [2]: -0.193279	
+grad [0]: -0.049799	grad [1]: 0.000623	grad [2]: 0.049177	
+embedding grads:
+
+grad [0]: 0.081721	grad [1]: -0.039957	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.039765	grad [3]: 0.317515	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.065605	grad [5]: -0.090791	
+
+
+loss after back = 0.096923
+
+epoch 89 
+
+
+prob [0]: 0.000687	prob [1]: 0.969189	prob [2]: 0.030124	
+prob [0]: 0.116240	prob [1]: 0.072515	prob [2]: 0.811244	
+prob [0]: 0.950957	prob [1]: 0.000611	prob [2]: 0.048433	
+
+loss before back = 0.096923
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.674260	-0.594052	
+token 1:	0.368523	-1.019872	
+token 2:	1.928432	0.554296	
+
+output embedding table:
+token 0:	1.362862	0.410510	
+token 1:	-2.530311	-0.108818	
+token 2:	0.076226	-1.452553	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000687	grad [1]: -0.030811	grad [2]: 0.030124	
+grad [0]: 0.116240	grad [1]: 0.072515	grad [2]: -0.188756	
+grad [0]: -0.049043	grad [1]: 0.000611	grad [2]: 0.048433	
+embedding grads:
+
+grad [0]: 0.081083	grad [1]: -0.039866	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.039301	grad [3]: 0.312037	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.064647	grad [5]: -0.089987	
+
+
+loss after back = 0.094762
+
+epoch 90 
+
+
+prob [0]: 0.000674	prob [1]: 0.969468	prob [2]: 0.029858	
+prob [0]: 0.113451	prob [1]: 0.070901	prob [2]: 0.815649	
+prob [0]: 0.951698	prob [1]: 0.000599	prob [2]: 0.047703	
+
+loss before back = 0.094762
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.676962	-0.592723	
+token 1:	0.369833	-1.030273	
+token 2:	1.930587	0.557296	
+
+output embedding table:
+token 0:	1.364610	0.415317	
+token 1:	-2.532930	-0.106998	
+token 2:	0.077097	-1.459180	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000674	grad [1]: -0.030532	grad [2]: 0.029858	
+grad [0]: 0.113451	grad [1]: 0.070901	grad [2]: -0.184351	
+grad [0]: -0.048302	grad [1]: 0.000599	grad [2]: 0.047703	
+embedding grads:
+
+grad [0]: 0.080450	grad [1]: -0.039771	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.038836	grad [3]: 0.306637	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.063708	grad [5]: -0.089185	
+
+
+loss after back = 0.092666
+
+epoch 91 
+
+
+prob [0]: 0.000662	prob [1]: 0.969744	prob [2]: 0.029595	
+prob [0]: 0.110737	prob [1]: 0.069327	prob [2]: 0.819936	
+prob [0]: 0.952424	prob [1]: 0.000588	prob [2]: 0.046988	
+
+loss before back = 0.092666
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.679644	-0.591397	
+token 1:	0.371128	-1.040494	
+token 2:	1.932711	0.560268	
+
+output embedding table:
+token 0:	1.366342	0.420059	
+token 1:	-2.535520	-0.105201	
+token 2:	0.077955	-1.465719	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000662	grad [1]: -0.030256	grad [2]: 0.029595	
+grad [0]: 0.110737	grad [1]: 0.069327	grad [2]: -0.180064	
+grad [0]: -0.047576	grad [1]: 0.000588	grad [2]: 0.046988	
+embedding grads:
+
+grad [0]: 0.079822	grad [1]: -0.039672	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.038370	grad [3]: 0.301318	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.062788	grad [5]: -0.088386	
+
+
+loss after back = 0.090631
+
+epoch 92 
+
+
+prob [0]: 0.000650	prob [1]: 0.970017	prob [2]: 0.029334	
+prob [0]: 0.108098	prob [1]: 0.067794	prob [2]: 0.824109	
+prob [0]: 0.953136	prob [1]: 0.000577	prob [2]: 0.046288	
+
+loss before back = 0.090631
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.682305	-0.590075	
+token 1:	0.372407	-1.050538	
+token 2:	1.934804	0.563215	
+
+output embedding table:
+token 0:	1.368059	0.424737	
+token 1:	-2.538080	-0.103427	
+token 2:	0.078798	-1.472171	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000650	grad [1]: -0.029983	grad [2]: 0.029334	
+grad [0]: 0.108098	grad [1]: 0.067794	grad [2]: -0.175891	
+grad [0]: -0.046864	grad [1]: 0.000577	grad [2]: 0.046288	
+embedding grads:
+
+grad [0]: 0.079198	grad [1]: -0.039568	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.037905	grad [3]: 0.296082	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.061886	grad [5]: -0.087591	
+
+
+loss after back = 0.088656
+
+epoch 93 
+
+
+prob [0]: 0.000638	prob [1]: 0.970286	prob [2]: 0.029076	
+prob [0]: 0.105532	prob [1]: 0.066300	prob [2]: 0.828168	
+prob [0]: 0.953834	prob [1]: 0.000566	prob [2]: 0.045601	
+
+loss before back = 0.088656
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.684945	-0.588756	
+token 1:	0.373670	-1.060408	
+token 2:	1.936867	0.566134	
+
+output embedding table:
+token 0:	1.369761	0.429351	
+token 1:	-2.540611	-0.101678	
+token 2:	0.079627	-1.478534	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000638	grad [1]: -0.029714	grad [2]: 0.029076	
+grad [0]: 0.105532	grad [1]: 0.066300	grad [2]: -0.171832	
+grad [0]: -0.046166	grad [1]: 0.000566	grad [2]: 0.045601	
+embedding grads:
+
+grad [0]: 0.078579	grad [1]: -0.039460	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.037441	grad [3]: 0.290932	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.061001	grad [5]: -0.086799	
+
+
+loss after back = 0.086741
+
+epoch 94 
+
+
+prob [0]: 0.000626	prob [1]: 0.970554	prob [2]: 0.028820	
+prob [0]: 0.103038	prob [1]: 0.064846	prob [2]: 0.832116	
+prob [0]: 0.954517	prob [1]: 0.000555	prob [2]: 0.044928	
+
+loss before back = 0.086741
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.687564	-0.587441	
+token 1:	0.374918	-1.070105	
+token 2:	1.938900	0.569028	
+
+output embedding table:
+token 0:	1.371448	0.433902	
+token 1:	-2.543114	-0.099952	
+token 2:	0.080443	-1.484810	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000626	grad [1]: -0.029446	grad [2]: 0.028820	
+grad [0]: 0.103038	grad [1]: 0.064846	grad [2]: -0.167884	
+grad [0]: -0.045483	grad [1]: 0.000555	grad [2]: 0.044928	
+embedding grads:
+
+grad [0]: 0.077964	grad [1]: -0.039348	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.036979	grad [3]: 0.285869	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.060134	grad [5]: -0.086012	
+
+
+loss after back = 0.084882
+
+epoch 95 
+
+
+prob [0]: 0.000615	prob [1]: 0.970818	prob [2]: 0.028567	
+prob [0]: 0.100616	prob [1]: 0.063430	prob [2]: 0.835954	
+prob [0]: 0.955187	prob [1]: 0.000545	prob [2]: 0.044268	
+
+loss before back = 0.084882
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.690163	-0.586129	
+token 1:	0.376151	-1.079634	
+token 2:	1.940904	0.571895	
+
+output embedding table:
+token 0:	1.373120	0.438389	
+token 1:	-2.545588	-0.098250	
+token 2:	0.081245	-1.491000	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000615	grad [1]: -0.029182	grad [2]: 0.028567	
+grad [0]: 0.100616	grad [1]: 0.063430	grad [2]: -0.164046	
+grad [0]: -0.044813	grad [1]: 0.000545	grad [2]: 0.044268	
+embedding grads:
+
+grad [0]: 0.077355	grad [1]: -0.039233	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.036518	grad [3]: 0.280894	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.059285	grad [5]: -0.085228	
+
+
+loss after back = 0.083079
+
+epoch 96 
+
+
+prob [0]: 0.000604	prob [1]: 0.971079	prob [2]: 0.028316	
+prob [0]: 0.098262	prob [1]: 0.062053	prob [2]: 0.839685	
+prob [0]: 0.955843	prob [1]: 0.000535	prob [2]: 0.043622	
+
+loss before back = 0.083079
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.692741	-0.584821	
+token 1:	0.377368	-1.088997	
+token 2:	1.942881	0.574736	
+
+output embedding table:
+token 0:	1.374778	0.442813	
+token 1:	-2.548036	-0.096571	
+token 2:	0.082034	-1.497103	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000604	grad [1]: -0.028921	grad [2]: 0.028316	
+grad [0]: 0.098262	grad [1]: 0.062053	grad [2]: -0.160315	
+grad [0]: -0.044157	grad [1]: 0.000535	grad [2]: 0.043622	
+embedding grads:
+
+grad [0]: 0.076750	grad [1]: -0.039113	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.036060	grad [3]: 0.276009	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.058452	grad [5]: -0.084450	
+
+
+loss after back = 0.081329
+
+epoch 97 
+
+
+prob [0]: 0.000594	prob [1]: 0.971338	prob [2]: 0.028068	
+prob [0]: 0.095976	prob [1]: 0.060712	prob [2]: 0.843312	
+prob [0]: 0.956486	prob [1]: 0.000526	prob [2]: 0.042988	
+
+loss before back = 0.081329
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.695300	-0.583518	
+token 1:	0.378570	-1.098198	
+token 2:	1.944829	0.577551	
+
+output embedding table:
+token 0:	1.376421	0.447176	
+token 1:	-2.550456	-0.094916	
+token 2:	0.082811	-1.503121	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000594	grad [1]: -0.028662	grad [2]: 0.028068	
+grad [0]: 0.095976	grad [1]: 0.060712	grad [2]: -0.156688	
+grad [0]: -0.043514	grad [1]: 0.000526	grad [2]: 0.042988	
+embedding grads:
+
+grad [0]: 0.076150	grad [1]: -0.038990	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.035605	grad [3]: 0.271214	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.057636	grad [5]: -0.083677	
+
+
+loss after back = 0.079632
+
+epoch 98 
+
+
+prob [0]: 0.000584	prob [1]: 0.971595	prob [2]: 0.027822	
+prob [0]: 0.093756	prob [1]: 0.059408	prob [2]: 0.846837	
+prob [0]: 0.957116	prob [1]: 0.000517	prob [2]: 0.042368	
+
+loss before back = 0.079632
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.697838	-0.582218	
+token 1:	0.379757	-1.107238	
+token 2:	1.946750	0.580340	
+
+output embedding table:
+token 0:	1.378050	0.451477	
+token 1:	-2.552849	-0.093285	
+token 2:	0.083575	-1.509053	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000584	grad [1]: -0.028405	grad [2]: 0.027822	
+grad [0]: 0.093756	grad [1]: 0.059408	grad [2]: -0.153163	
+grad [0]: -0.042884	grad [1]: 0.000517	grad [2]: 0.042368	
+embedding grads:
+
+grad [0]: 0.075554	grad [1]: -0.038863	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.035153	grad [3]: 0.266509	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.056836	grad [5]: -0.082909	
+
+
+loss after back = 0.077985
+
+epoch 99 
+
+
+prob [0]: 0.000574	prob [1]: 0.971848	prob [2]: 0.027579	
+prob [0]: 0.091600	prob [1]: 0.058139	prob [2]: 0.850261	
+prob [0]: 0.957733	prob [1]: 0.000508	prob [2]: 0.041760	
+
+loss before back = 0.077985
+
+ backwards pass ...
+
+input embedding table:
+token 0:	-1.700356	-0.580922	
+token 1:	0.380929	-1.116122	
+token 2:	1.948645	0.583104	
+
+output embedding table:
+token 0:	1.379665	0.455718	
+token 1:	-2.555216	-0.091677	
+token 2:	0.084327	-1.514902	
+
+ grads after mm back:
+
+
+Logits:
+
+grad [0]: 0.000574	grad [1]: -0.028152	grad [2]: 0.027579	
+grad [0]: 0.091600	grad [1]: 0.058139	grad [2]: -0.149739	
+grad [0]: -0.042267	grad [1]: 0.000508	grad [2]: 0.041760	
+embedding grads:
+
+grad [0]: 0.074963	grad [1]: -0.038733	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: -0.034704	grad [3]: 0.261896	grad [4]: 0.000000	grad [5]: 0.000000	
+grad [0]: 0.000000	grad [1]: 0.000000	grad [2]: 0.000000	grad [3]: 0.000000	grad [4]: -0.056052	grad [5]: -0.082147	
+
+
+loss after back = 0.076387

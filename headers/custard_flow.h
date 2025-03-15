@@ -1,5 +1,7 @@
 #include "./mlp_types.h"
 void print_training_set(TrainingSet * training_set, size_t number_samples);
+void print_embedding_table(Model *model);
+void print_output_table(Model *model);
 int readNames(char ***names, const char *filename);
 float generate_normal_random_number();
 int encode(char c);

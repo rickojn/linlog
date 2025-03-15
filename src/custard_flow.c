@@ -136,7 +136,7 @@ void print_token_embeddings(Model * model, TrainingSet * training_set){
 
 void print_embedding_table(Model *model)
 {
-    printf("\nembedding table:\n");
+    printf("\ninput embedding table:\n");
     // for (int idx_token = 0; idx_token < SIZE_VOCAB; idx_token++)
     for (int idx_token = 0; idx_token < 3; idx_token++)
     {
@@ -144,6 +144,23 @@ void print_embedding_table(Model *model)
         for (int idx_dim = 0; idx_dim < DIM_EMBEDDINGS; idx_dim++)
         {
             printf("%f\t", model->parameters.table_embedding[idx_token * DIM_EMBEDDINGS + idx_dim]);
+        }
+        printf("\n");
+    }
+}
+
+
+void print_output_table(Model *model)
+{
+    printf("\noutput embedding table:\n");
+    // for (int idx_token = 0; idx_token < SIZE_VOCAB; idx_token++)
+    for (int idx_output = 0; idx_output < 3; idx_output++)
+    {
+        printf("token %d:\t", idx_output);
+        for (int idx_dim = 0; idx_dim < DIM_EMBEDDINGS; idx_dim++)
+        {
+            size_t offset_output = idx_output * DIM_EMBEDDINGS + idx_dim;
+            printf("%f\t", model->parameters.weights_output[offset_output]);
         }
         printf("\n");
     }

@@ -392,6 +392,8 @@ void update_weights(Model * model, size_t size_batch){
 
 
     print_embedding_table(model);
+    print_output_table(model);
+    
 
 //    update embedding table
     for (size_t idx_embedding_component = 0; idx_embedding_component < SIZE_VOCAB * DIM_EMBEDDINGS; idx_embedding_component++){
@@ -417,7 +419,7 @@ void model_backwards(Model * model, TrainingSet * training_set){
         + SIZE_BLOCK * DIM_EMBEDDINGS // embedding activations
         + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB // output weights
         + SIZE_VOCAB //output biases
-        + SIZE_VOCAB)
+        + SIZE_VOCAB) * sizeof(float)
         );
 
     loss_softmax_backwards(training_set->Y, model->gradients.pre_activations_output, model->activations.probs, training_set->size);
@@ -429,9 +431,23 @@ void model_backwards(Model * model, TrainingSet * training_set){
     embedding_backwards(model->gradients.activations_embeddings, training_set->X, model->gradients.weights_embeddings, training_set->size);
     update_weights(model, training_set->size);
 
+    printf("\n grads after mm back:\n\n");
+    printf("\nLogits:\n");
+    for (int x = 0; x < model->size_batch; x++){
+        printf("\n");
+        for (int i = 0; i < SIZE_VOCAB; i++){
+            printf("grad [%d]: %f\t", i, model->gradients.pre_activations_output[x * SIZE_VOCAB + i]);
+        }    
+    }
 
-    // printf("\n after update weights:\n");
-    // print_model(model);
+    printf("\nembedding grads:\n");
+    for (int x = 0; x < model->size_batch; x++){
+        printf("\n");
+        for (int i = 0; i < SIZE_VOCAB * DIM_EMBEDDINGS; i++){
+            printf("grad [%d]: %f\t", i, model->gradients.weights_embeddings[x * SIZE_VOCAB * DIM_EMBEDDINGS + i]);
+        }    
+    }
+
 
     end = clock();
 
@@ -511,6 +527,13 @@ int main()
         printf("\nepoch %d \n", idx_epoch);
         printf("\n");
         model_forward(&model, training_set->X, training_set->size);
+        for (int x = 0; x < model.size_batch; x++){
+            printf("\n");
+            for (int i = 0; i < SIZE_VOCAB; i++){
+                printf("prob [%d]: %f\t", i, model.activations.probs[x * model.size_batch + i]);
+            }    
+        }
+        printf("\n");
         printf("\nloss before back = %f\n", cross_entropy_loss(model.activations.probs, training_set->Y, training_set->size));
         model_backwards(&model, training_set);
        // print_model(&model);
