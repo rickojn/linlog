@@ -240,7 +240,7 @@ float cross_entropy_loss(float * probs, char * labels, size_t size_batch){
     float loss = batch_loss/size_batch;
     if (loss > prev_loss){
         printf("\n new loss is greater: %f\n", loss);
-        // exit(0);
+        exit(0);
     }
     else {
         prev_loss = loss;
