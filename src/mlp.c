@@ -103,7 +103,7 @@ void create_model(Model * model, size_t size_batch){
     + SIZE_HIDDEN // hidden biases
     + SIZE_HIDDEN // pre-activations hidden
     + SIZE_HIDDEN // hidden activations
-    + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB // output weights
+    + SIZE_HIDDEN * SIZE_VOCAB // output weights
     + SIZE_VOCAB //output biases
     + SIZE_VOCAB); // output pre-activations
 
@@ -113,7 +113,7 @@ void create_model(Model * model, size_t size_batch){
     model->parameters.weights_hidden = model_memory + SIZE_VOCAB * DIM_EMBEDDINGS;
     model->parameters.biases_hidden = model->parameters.weights_hidden + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS;
     model->parameters.weights_output = model->parameters.biases_hidden + SIZE_HIDDEN;
-    model->parameters.biases_output = model->parameters.weights_output + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB;
+    model->parameters.biases_output = model->parameters.weights_output + SIZE_HIDDEN * SIZE_VOCAB;
 
     model->activations.input = model->parameters.biases_output + SIZE_VOCAB;
     model->activations.pre_hidden = model->activations.input +  SIZE_BLOCK * DIM_EMBEDDINGS * size_batch;
@@ -123,11 +123,12 @@ void create_model(Model * model, size_t size_batch){
 
     model->gradients.pre_activations_output = model->activations.probs + size_batch * SIZE_VOCAB;
     model->gradients.weights_output = model->gradients.pre_activations_output + size_batch * SIZE_VOCAB;
-    model->gradients.biases_output = model->gradients.weights_output + size_batch * SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB;
+    model->gradients.biases_output = model->gradients.weights_output + size_batch * SIZE_HIDDEN * SIZE_VOCAB;
     model->gradients.activations_hidden = model->gradients.biases_output + SIZE_VOCAB * size_batch;
     model->gradients.pre_activations_hidden = model->gradients.activations_hidden + SIZE_HIDDEN * size_batch;
     model->gradients.weights_hidden = model->gradients.pre_activations_hidden + SIZE_HIDDEN * size_batch;
-    model->gradients.activations_embeddings = model->gradients.weights_hidden + size_batch * SIZE_VOCAB * SIZE_BLOCK * DIM_EMBEDDINGS;
+    model->gradients.biases_hidden = model->gradients.weights_hidden + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS;
+    model->gradients.activations_embeddings = model->gradients.biases_hidden + size_batch * SIZE_HIDDEN;
     model->gradients.weights_embeddings = model->gradients.activations_embeddings + size_batch * SIZE_BLOCK * DIM_EMBEDDINGS;
 
 
@@ -291,9 +292,9 @@ void loss_softmax_backwards(const char * labels, float * grad_logits, const floa
 }
 
 void tanh_backwards(const float * inputs, float * outputs, size_t size_neurons, size_t size_batch){
-    for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
+    for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++){
         for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++){
-            size_t offset_grad = idx_batch * size_batch + idx_neuron;
+            size_t offset_grad = idx_sample * size_batch + idx_neuron;
             float db_input = inputs[offset_grad];
             outputs[offset_grad] = 1 - pow(tanh(inputs[offset_grad]), 2);
             float db_grad = outputs[offset_grad];
@@ -388,6 +389,7 @@ void embedding_backwards(const float * grad_activations, const char * inputs, fl
                     idx_token_embedding * DIM_EMBEDDINGS + idx_embedding_element;
                 size_t offset_grad_embedding_activation = offset_input_token * DIM_EMBEDDINGS + idx_embedding_element;
                 float db_grad = grad_activations[offset_grad_embedding_activation];
+                printf("\n offset grad embedding element: %zu\n", offset_grad_embedding_element);
                 grad_embeddings[offset_grad_embedding_element] += grad_activations[offset_grad_embedding_activation];
             }
         }
@@ -396,85 +398,47 @@ void embedding_backwards(const float * grad_activations, const char * inputs, fl
 
 void update_layer(float * biases, float * weights,  const float * gradients_biases, const float * gradients_weights,
     size_t size_neurons, size_t size_weights, size_t size_batch){
-    for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++){
-        float delta = 0.0;
-        for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++){
-            size_t offset_bias = idx_sample * size_neurons + idx_neuron;
-            delta += gradients_biases[offset_bias];
+
+    if (biases)
+    {
+        for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++)
+        {
+            float delta = 0.0;
+            for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++)
+            {
+                size_t offset_bias = idx_sample * size_neurons + idx_neuron;
+                delta += gradients_biases[offset_bias];
+            }
+            delta /= size_batch;
+            biases[idx_neuron] -= delta * LEARNING_RATE;
         }
-        delta /= size_batch;
-        biases[idx_neuron] -= delta * LEARNING_RATE;
     }
 
-    for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++ ){
-        for (size_t idx_weight = 0; idx_weight < size_weights; idx_weight++){
+    for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++)
+    {
+        for (size_t idx_weight = 0; idx_weight < size_weights; idx_weight++)
+        {
             float delta = 0.0;
-            for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
-                size_t offset_batch_weight = idx_batch * size_neurons * size_weights + 
-                idx_neuron * size_weights + idx_weight;
+            for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++)
+            {
+                size_t offset_batch_weight = idx_batch * size_neurons * size_weights +
+                                             idx_neuron * size_weights + idx_weight;
                 delta += gradients_weights[offset_batch_weight];
             }
-            delta /= size_batch; 
+            delta /= size_batch;
             size_t offset_weight = idx_neuron * size_weights + idx_weight;
             weights[offset_weight] -= delta * LEARNING_RATE;
         }
     }
 }
 
-
-void update_weights(Model * model, size_t size_batch){
-    float delta = 0.0;
-    // update outputs
-    for (size_t idx_neuron = 0; idx_neuron < SIZE_VOCAB; idx_neuron++){
-        // printf("\n");
-        for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
-            size_t offset_bias_output = idx_batch * SIZE_VOCAB + idx_neuron;
-            // printf(" %f ",model->gradients.biases_output[offset_bias_output]);
-            delta += model->gradients.biases_output[offset_bias_output] * LEARNING_RATE;
-        }
-        // printf("\n");
-        // printf("\n total delta = %f \n", delta);
-        delta /= size_batch;
-        // printf("\n bias [%d] = %f  delta = %f \n", idx_neuron, model->parameters.biases_output[idx_neuron], delta);
-        model->parameters.biases_output[idx_neuron] -= delta * LEARNING_RATE;
-    }
-
-    for (size_t idx_neuron = 0; idx_neuron < SIZE_VOCAB; idx_neuron++ ){
-        for (size_t idx_weight = 0; idx_weight < SIZE_BLOCK * DIM_EMBEDDINGS; idx_weight++){
-            delta = 0.0;
-            for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
-                size_t offset_batch_weight = idx_batch * SIZE_VOCAB * SIZE_BLOCK * DIM_EMBEDDINGS + 
-                idx_neuron * SIZE_BLOCK * DIM_EMBEDDINGS + idx_weight;
-                // printf("\n neuron %zu, weight %zu batch %zu grad: %f\n", idx_neuron, idx_weight, idx_batch, model->gradients.weights_output[offset_batch_weight]);
-                delta += model->gradients.weights_output[offset_batch_weight];
-            }
-            // printf("\nweight delta[%zu] = %f\n", idx_weight, delta);
-            delta /= size_batch; 
-            size_t offset_weight = idx_neuron * SIZE_BLOCK * DIM_EMBEDDINGS + idx_weight;
-            float db_weight_before = model->parameters.weights_output[offset_weight];
-            model->parameters.weights_output[offset_weight] -= delta * LEARNING_RATE;
-            float db_weight_after = model->parameters.weights_output[offset_weight];
-            int db = 0;
-        }
-    }
-
-
-    print_embedding_table(model);
-    print_output_table(model);
-    
-
-//    update embedding table
-    for (size_t idx_embedding_component = 0; idx_embedding_component < SIZE_VOCAB * DIM_EMBEDDINGS; idx_embedding_component++){
-        delta = 0.0;
-        for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
-            size_t offset_embedding_gradient = idx_batch * SIZE_VOCAB * DIM_EMBEDDINGS + idx_embedding_component;
-            delta += model->gradients.weights_embeddings[offset_embedding_gradient];
-        }
-        delta /= size_batch;
-        model->parameters.table_embedding[idx_embedding_component] -= delta * LEARNING_RATE;
-    }
-
-    
+void update_parameters(Model * model, size_t size_batch){
+    update_layer(model->parameters.biases_output, model->parameters.weights_output, model->gradients.biases_output, model->gradients.weights_output,
+        SIZE_VOCAB, SIZE_HIDDEN, size_batch);
+    update_layer(model->parameters.biases_hidden, model->parameters.weights_hidden, model->gradients.biases_hidden, model->gradients.weights_hidden,
+        SIZE_HIDDEN, SIZE_BLOCK * DIM_EMBEDDINGS, size_batch);
+    update_layer(NULL, model->parameters.table_embedding, NULL, model->gradients.weights_embeddings,
+        SIZE_VOCAB, DIM_EMBEDDINGS, size_batch);
 }
 
 
@@ -485,19 +449,27 @@ void model_backwards(Model * model, TrainingSet * training_set){
     begin = clock();
     memset(model->gradients.pre_activations_output, 0, training_set->size * ( SIZE_VOCAB * DIM_EMBEDDINGS //embeddings weights
         + SIZE_BLOCK * DIM_EMBEDDINGS // embedding activations
-        + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB // output weights
+        + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS // hidden weights
+        + SIZE_HIDDEN // hidden biases
+        + SIZE_HIDDEN // pre-activations hidden
+        + SIZE_HIDDEN // hidden activations
+        + SIZE_HIDDEN * SIZE_VOCAB // output weights
         + SIZE_VOCAB //output biases
-        + SIZE_VOCAB) * sizeof(float)
+        + SIZE_VOCAB) // logits
+        * sizeof(float)
         );
 
     loss_softmax_backwards(training_set->Y, model->gradients.pre_activations_output, model->activations.probs, training_set->size);
     // printf("\n before mm back:\n");
     // print_model(model);
     
-    matmul_backwards(model->gradients.pre_activations_output, model->parameters.weights_output, model->activations.input, model->gradients.weights_output,
-    model->gradients.biases_output, model->gradients.activations_embeddings, SIZE_VOCAB, SIZE_BLOCK * DIM_EMBEDDINGS, training_set->size);
+    matmul_backwards(model->gradients.pre_activations_output, model->parameters.weights_output, model->activations.hidden, model->gradients.weights_output,
+        model->gradients.biases_output, model->gradients.activations_hidden, SIZE_VOCAB, SIZE_HIDDEN, training_set->size);
+    tanh_backwards(model->activations.pre_hidden, model->gradients.activations_hidden, SIZE_HIDDEN, training_set->size);
+    matmul_backwards(model->gradients.pre_activations_hidden, model->parameters.weights_hidden, model->activations.input, model->gradients.weights_hidden,
+    model->gradients.biases_hidden, model->gradients.activations_embeddings, SIZE_HIDDEN, SIZE_BLOCK * DIM_EMBEDDINGS, training_set->size);
     embedding_backwards(model->gradients.activations_embeddings, training_set->X, model->gradients.weights_embeddings, training_set->size);
-    update_weights(model, training_set->size);
+    update_parameters(model, training_set->size);
 
     // printf("\n grads after mm back:\n\n");
     // printf("\nLogits:\n");
@@ -623,6 +595,6 @@ int main()
     free(training_set->X);
     free(training_set->Y);
     free(training_set);
-    free(model.parameters.table_embedding);
+        free(model.parameters.table_embedding);
     return 0;
 }
