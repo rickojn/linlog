@@ -87,14 +87,22 @@ TrainingSet * createTrainingSet(char **names, int name_count){
 
 void create_model(Model * model, size_t size_batch){    
     size_t size_model_params_memory = SIZE_VOCAB * DIM_EMBEDDINGS // embedding table
+    + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS // hidden weights
+    + SIZE_HIDDEN // hidden biases
     + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB // output weights
     + SIZE_VOCAB; // output biases
 
     size_t size_model_activations = size_batch * (SIZE_BLOCK * DIM_EMBEDDINGS // inputs
+    + SIZE_HIDDEN // pre-activations hidden
+    + SIZE_HIDDEN // activations hidden
     + SIZE_VOCAB * 2); // output logits and probs
 
     size_t size_model_gradients = size_batch * (SIZE_VOCAB * DIM_EMBEDDINGS //embeddings weights
     + SIZE_BLOCK * DIM_EMBEDDINGS // embedding activations
+    + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS // hidden weights
+    + SIZE_HIDDEN // hidden biases
+    + SIZE_HIDDEN // pre-activations hidden
+    + SIZE_HIDDEN // hidden activations
     + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB // output weights
     + SIZE_VOCAB //output biases
     + SIZE_VOCAB); // output pre-activations
@@ -102,19 +110,24 @@ void create_model(Model * model, size_t size_batch){
     size_t size_model_memory = size_model_params_memory + size_model_activations + size_model_gradients;
     float * model_memory = calloc(size_model_memory, sizeof(float));
     model->parameters.table_embedding = model_memory;
-    model->parameters.weights_output = model_memory + SIZE_VOCAB * DIM_EMBEDDINGS;
+    model->parameters.weights_hidden = model_memory + SIZE_VOCAB * DIM_EMBEDDINGS;
+    model->parameters.biases_hidden = model->parameters.weights_hidden + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS;
+    model->parameters.weights_output = model->parameters.biases_hidden + SIZE_HIDDEN;
     model->parameters.biases_output = model->parameters.weights_output + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB;
 
     model->activations.input = model->parameters.biases_output + SIZE_VOCAB;
-    model->activations.output = model->activations.input +  SIZE_BLOCK * DIM_EMBEDDINGS * size_batch;
-
-    model->activations.probs = model->activations.output
-    + size_batch * SIZE_VOCAB;
+    model->activations.pre_hidden = model->activations.input +  SIZE_BLOCK * DIM_EMBEDDINGS * size_batch;
+    model->activations.hidden = model->activations.pre_hidden + SIZE_HIDDEN * size_batch;
+    model->activations.output = model->activations.hidden + SIZE_HIDDEN * size_batch;
+    model->activations.probs = model->activations.output + size_batch * SIZE_VOCAB;
 
     model->gradients.pre_activations_output = model->activations.probs + size_batch * SIZE_VOCAB;
     model->gradients.weights_output = model->gradients.pre_activations_output + size_batch * SIZE_VOCAB;
     model->gradients.biases_output = model->gradients.weights_output + size_batch * SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB;
-    model->gradients.activations_embeddings = model->gradients.biases_output + size_batch * SIZE_VOCAB;
+    model->gradients.activations_hidden = model->gradients.biases_output + SIZE_VOCAB * size_batch;
+    model->gradients.pre_activations_hidden = model->gradients.activations_hidden + SIZE_HIDDEN * size_batch;
+    model->gradients.weights_hidden = model->gradients.pre_activations_hidden + SIZE_HIDDEN * size_batch;
+    model->gradients.activations_embeddings = model->gradients.weights_hidden + size_batch * SIZE_VOCAB * SIZE_BLOCK * DIM_EMBEDDINGS;
     model->gradients.weights_embeddings = model->gradients.activations_embeddings + size_batch * SIZE_BLOCK * DIM_EMBEDDINGS;
 
 
@@ -124,9 +137,11 @@ void create_model(Model * model, size_t size_batch){
 
 void initialise_model(Model *model)
 {
-    size_t size_params = SIZE_VOCAB * DIM_EMBEDDINGS 
-    + SIZE_VOCAB
-    + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB;
+    size_t size_params = SIZE_VOCAB * DIM_EMBEDDINGS // embedding table
+    + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS // hidden weights
+    + SIZE_HIDDEN // hidden biases
+    + SIZE_VOCAB // output biases
+    + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB; // output weights
 
     srand(42);
     // srand(time(NULL));
@@ -190,6 +205,16 @@ void matmul_forward(const float * inputs, const float * weights, const float * b
 }
 
 
+void tanh_foward(const float * pre_activations, float * activations, size_t size_neurons, size_t size_batch ){
+    for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
+        for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++){
+            size_t offset_activation = idx_batch * size_neurons + idx_neuron;
+            activations[offset_activation] = tanh(pre_activations[offset_activation]);
+        }
+    }
+}
+
+
 
 void softmax_foward(const float * logits, float * probs, size_t size_batch){
     for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
@@ -221,8 +246,11 @@ void softmax_foward(const float * logits, float * probs, size_t size_batch){
 void model_forward(Model * model, char * tokens, size_t size_batch ){ 
     clock_t begin = clock();
     embed_tokens(model, tokens, model->size_batch);
-    matmul_forward(model->activations.input, model->parameters.weights_output, model->parameters.biases_output, model->activations.output,
-        SIZE_VOCAB, SIZE_BLOCK * DIM_EMBEDDINGS, size_batch);
+    matmul_forward(model->activations.input, model->parameters.weights_hidden, model->parameters.biases_hidden, model->activations.pre_hidden,
+        SIZE_HIDDEN, SIZE_BLOCK * DIM_EMBEDDINGS, size_batch);
+    tanh_foward(model->activations.pre_hidden, model->activations.hidden, SIZE_HIDDEN, size_batch);
+    matmul_forward(model->activations.hidden, model->parameters.weights_output, model->parameters.biases_output, model->activations.output,
+        SIZE_VOCAB, SIZE_HIDDEN, size_batch);
     softmax_foward(model->activations.output, model->activations.probs, size_batch);
     clock_t end = clock();
     double time_spent = (end - begin)/CLOCKS_PER_SEC;
@@ -261,6 +289,19 @@ void loss_softmax_backwards(const char * labels, float * grad_logits, const floa
         }
     }
 }
+
+void tanh_backwards(const float * inputs, float * outputs, size_t size_neurons, size_t size_batch){
+    for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
+        for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++){
+            size_t offset_grad = idx_batch * size_batch + idx_neuron;
+            float db_input = inputs[offset_grad];
+            outputs[offset_grad] = 1 - pow(tanh(inputs[offset_grad]), 2);
+            float db_grad = outputs[offset_grad];
+            int db = 0;
+        }
+    }
+}
+
 
 /*
 x1 x2 x3
@@ -349,6 +390,33 @@ void embedding_backwards(const float * grad_activations, const char * inputs, fl
                 float db_grad = grad_activations[offset_grad_embedding_activation];
                 grad_embeddings[offset_grad_embedding_element] += grad_activations[offset_grad_embedding_activation];
             }
+        }
+    }
+}
+
+void update_layer(float * biases, float * weights,  const float * gradients_biases, const float * gradients_weights,
+    size_t size_neurons, size_t size_weights, size_t size_batch){
+    for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++){
+        float delta = 0.0;
+        for (size_t idx_sample = 0; idx_sample < size_batch; idx_sample++){
+            size_t offset_bias = idx_sample * size_neurons + idx_neuron;
+            delta += gradients_biases[offset_bias];
+        }
+        delta /= size_batch;
+        biases[idx_neuron] -= delta * LEARNING_RATE;
+    }
+
+    for (size_t idx_neuron = 0; idx_neuron < size_neurons; idx_neuron++ ){
+        for (size_t idx_weight = 0; idx_weight < size_weights; idx_weight++){
+            float delta = 0.0;
+            for (size_t idx_batch = 0; idx_batch < size_batch; idx_batch++){
+                size_t offset_batch_weight = idx_batch * size_neurons * size_weights + 
+                idx_neuron * size_weights + idx_weight;
+                delta += gradients_weights[offset_batch_weight];
+            }
+            delta /= size_batch; 
+            size_t offset_weight = idx_neuron * size_weights + idx_weight;
+            weights[offset_weight] -= delta * LEARNING_RATE;
         }
     }
 }

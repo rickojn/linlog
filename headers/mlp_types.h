@@ -10,7 +10,7 @@
 #define NUM_EPOCHS 100
 #define LEARNING_RATE 0.1
 #define DIM_EMBEDDINGS 2
-//#define SIZE_BATCH 32
+#define SIZE_HIDDEN 10
 
 
 
@@ -28,6 +28,8 @@ typedef struct
 typedef struct 
 {
     float * table_embedding;
+    float * weights_hidden;
+    float * biases_hidden;
     float * weights_output;
     float * biases_output;
 } Parameters;
@@ -35,6 +37,8 @@ typedef struct
 typedef struct
 {
     float * input;
+    float * pre_hidden;
+    float * hidden;
     float * output;
     float * probs;
 
@@ -45,6 +49,10 @@ typedef struct
   float * pre_activations_output;
   float * weights_output;  
   float * biases_output;
+  float * activations_hidden;
+  float * pre_activations_hidden;
+  float * weights_hidden;
+  float * biases_hidden;
   float * activations_embeddings;
   float * weights_embeddings;
 } Gradients;
