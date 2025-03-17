@@ -89,7 +89,7 @@ void create_model(Model * model, size_t size_batch){
     size_t size_model_params_memory = SIZE_VOCAB * DIM_EMBEDDINGS // embedding table
     + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS // hidden weights
     + SIZE_HIDDEN // hidden biases
-    + SIZE_BLOCK * DIM_EMBEDDINGS * SIZE_VOCAB // output weights
+    + SIZE_HIDDEN * SIZE_VOCAB // output weights
     + SIZE_VOCAB; // output biases
 
     size_t size_model_activations = size_batch * (SIZE_BLOCK * DIM_EMBEDDINGS // inputs
@@ -109,6 +109,11 @@ void create_model(Model * model, size_t size_batch){
 
     size_t size_model_memory = size_model_params_memory + size_model_activations + size_model_gradients;
     float * model_memory = calloc(size_model_memory, sizeof(float));
+    printf("\n model allocated memory: %zu bytes\n", size_model_memory * sizeof(float));
+    printf("\n model allocated memory for params and acts: %zu bytes\n", (size_model_params_memory + size_model_activations) * sizeof(float));
+    printf("\n model allocated memory for gradients: %zu bytes\n", size_model_gradients * sizeof(float));
+
+
     model->parameters.table_embedding = model_memory;
     model->parameters.weights_hidden = model_memory + SIZE_VOCAB * DIM_EMBEDDINGS;
     model->parameters.biases_hidden = model->parameters.weights_hidden + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS;
@@ -121,17 +126,18 @@ void create_model(Model * model, size_t size_batch){
     model->activations.output = model->activations.hidden + SIZE_HIDDEN * size_batch;
     model->activations.probs = model->activations.output + size_batch * SIZE_VOCAB;
 
-    model->gradients.pre_activations_output = model->activations.probs + size_batch * SIZE_VOCAB;
-    model->gradients.weights_output = model->gradients.pre_activations_output + size_batch * SIZE_VOCAB;
+    model->gradients.weights_embeddings = model->activations.probs + size_batch * SIZE_VOCAB;
+    model->gradients.activations_embeddings = model->gradients.weights_embeddings + size_batch * SIZE_VOCAB * DIM_EMBEDDINGS;
+    model->gradients.weights_hidden = model->gradients.activations_embeddings + size_batch * SIZE_BLOCK * DIM_EMBEDDINGS;
+    model->gradients.biases_hidden = model->gradients.weights_hidden + size_batch * SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS;
+    model->gradients.pre_activations_hidden = model->gradients.biases_hidden + size_batch * SIZE_HIDDEN;
+    model->gradients.activations_hidden = model->gradients.pre_activations_hidden + size_batch * SIZE_HIDDEN;
+    model->gradients.weights_output = model->gradients.activations_hidden + size_batch * SIZE_HIDDEN;
     model->gradients.biases_output = model->gradients.weights_output + size_batch * SIZE_HIDDEN * SIZE_VOCAB;
-    model->gradients.activations_hidden = model->gradients.biases_output + SIZE_VOCAB * size_batch;
-    model->gradients.pre_activations_hidden = model->gradients.activations_hidden + SIZE_HIDDEN * size_batch;
-    model->gradients.weights_hidden = model->gradients.pre_activations_hidden + SIZE_HIDDEN * size_batch;
-    model->gradients.biases_hidden = model->gradients.weights_hidden + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS;
-    model->gradients.activations_embeddings = model->gradients.biases_hidden + size_batch * SIZE_HIDDEN;
-    model->gradients.weights_embeddings = model->gradients.activations_embeddings + size_batch * SIZE_BLOCK * DIM_EMBEDDINGS;
+    model->gradients.pre_activations_output = model->gradients.biases_output + size_batch * SIZE_VOCAB;
 
-
+    printf("\nparam and act pointer diff %ld \n", (char *)model->gradients.weights_embeddings - (char *)model->parameters.table_embedding);   
+    printf("\ngrad pointer diff %ld \n", (char *)model->gradients.pre_activations_output - (char *)model->gradients.weights_embeddings);   
 
     model->size_batch = size_batch;
 }
@@ -447,7 +453,7 @@ void model_backwards(Model * model, TrainingSet * training_set){
     clock_t begin, end;
     double time_spent;
     begin = clock();
-    memset(model->gradients.pre_activations_output, 0, training_set->size * ( SIZE_VOCAB * DIM_EMBEDDINGS //embeddings weights
+    memset(model->gradients.weights_embeddings, 0, training_set->size * ( SIZE_VOCAB * DIM_EMBEDDINGS //embeddings weights
         + SIZE_BLOCK * DIM_EMBEDDINGS // embedding activations
         + SIZE_HIDDEN * SIZE_BLOCK * DIM_EMBEDDINGS // hidden weights
         + SIZE_HIDDEN // hidden biases
