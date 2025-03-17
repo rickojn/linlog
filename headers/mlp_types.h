@@ -3,14 +3,14 @@
 #endif
 
 
-#define SIZE_VOCAB 3
-#define SIZE_BLOCK 1
+#define SIZE_VOCAB 27
+#define SIZE_BLOCK 3
 #define INITIAL_SIZE 1000 // Initial number of strings
 #define MAX_LENGTH 256  // Maximum length of each string
-#define NUM_EPOCHS 100
+#define NUM_EPOCHS 10000
 #define LEARNING_RATE 0.1
 #define DIM_EMBEDDINGS 2
-#define SIZE_HIDDEN 5
+#define SIZE_HIDDEN 100
 
 
 

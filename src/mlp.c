@@ -252,7 +252,7 @@ void softmax_foward(const float * logits, float * probs, size_t size_batch){
 
 void model_forward(Model * model, char * tokens, size_t size_batch ){ 
     clock_t begin = clock();
-    embed_tokens(model, tokens, model->size_batch);
+    embed_tokens(model, tokens, size_batch);
     matmul_forward(model->activations.input, model->parameters.weights_hidden, model->parameters.biases_hidden, model->activations.pre_hidden,
         SIZE_HIDDEN, SIZE_BLOCK * DIM_EMBEDDINGS, size_batch);
     tanh_foward(model->activations.pre_hidden, model->activations.hidden, SIZE_HIDDEN, size_batch);
@@ -395,7 +395,6 @@ void embedding_backwards(const float * grad_activations, const char * inputs, fl
                     idx_token_embedding * DIM_EMBEDDINGS + idx_embedding_element;
                 size_t offset_grad_embedding_activation = offset_input_token * DIM_EMBEDDINGS + idx_embedding_element;
                 float db_grad = grad_activations[offset_grad_embedding_activation];
-                printf("\n offset grad embedding element: %zu\n", offset_grad_embedding_element);
                 grad_embeddings[offset_grad_embedding_element] += grad_activations[offset_grad_embedding_activation];
             }
         }
@@ -561,7 +560,7 @@ int main()
     
 
     // generate
-    // generate(&model, 5);
+    generate(&model, 5);
 
     //training loop
     // printf("\nmodel before training:\n");
@@ -592,7 +591,7 @@ int main()
     }
 
     // generate after training
-    // generate(&model, 5);
+    generate(&model, 5);
 
     for (size_t i = 0; i < count; i++){
         free(names[i]);
